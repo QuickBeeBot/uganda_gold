@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uganda's $12 Trillion Gold Opportunity | Official Investment Portal</title>
+  <meta name="description" content="Exclusive access to Uganda's historic 31M metric tonne gold discovery. Explore mining licenses, JV partnerships, and refining opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --gold-600: #ffffff; /* primary */
+      /* --gold-600: #C8A046; primary */
+      --gold-700: #B4892F;
+      --gold-800: #946C22;
+      --gold-300: #E9D8A6;
+      --gold-100: #FFF9E6;
+      --ink-900: #0f0f0f;
+      --ink-700: #262626;
+      --ink-600: #3a3a3a;
+      --paper: #fffdf7;
+      --muted: #8a8a8a;
+      --success: #2e7d32;
+      --error: #d32f2f;
+    }
+
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0 
+    }
+
+    html, body { 
+      height: 100%; 
+      font-family: 'Inter', sans-serif; 
+      color: var(--ink-900);
+      overflow-x: hidden;
+    }
+
+    a { 
+      color: inherit; 
+      text-decoration: none 
+    }
+
+    .container { 
+      width: min(1200px,92%); 
+      margin: 0 auto 
+    }
+
+    /* ===== GLASS NAVIGATION ===== */
+    .nav-glass {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 0;
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      background: rgba(255, 255, 255, 0.12);
+      border-bottom: 1px solid rgba(200, 160, 70, 0.18);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      border-radius: 0 0 20px 20px;
+    }
+
+    .nav-glass.scrolled {
+      padding: 0.6rem 0;
+      background: rgba(15, 15, 15, 0.35);
+      border-bottom: 1px solid rgba(200, 160, 70, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-glass .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #fff, #f0e6d2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.3s;
+    }
+
+    .nav-glass.scrolled .brand h1 {
+      background: linear-gradient(90deg, var(--gold-300), var(--gold-600));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-badge-glass {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 247, 214, 0.9), rgba(210, 168, 79, 0.6) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--gold-800);
+      box-shadow: 0 4px 12px rgba(180, 137, 47, 0.2);
+      transition: 0.3s;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 247, 214, 0.9), rgba(210, 168, 79, 0.6) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--gold-800);
+      box-shadow: 0 4px 12px rgba(180, 137, 47, 0.2);
+      transition: 0.3s;
+    }
+
+    .brand h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: white;
+      margin: 0;
+      background: linear-gradient(90deg, var(--gold-300), var(--gold-600));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-glass.scrolled .brand-badge-glass {
+      background: radial-gradient(circle at 30% 30%, rgba(255, 247, 214, 0.4), rgba(210, 168, 79, 0.8) 60%, transparent 100%);
+      color: var(--gold-300);
+    }
+
+    .navlinks-glass {
+      display: flex;
+      gap: 1.8rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      padding: 0.4rem 0;
+      transition: 0.3s;
+    }
+
+    .nav-link span {
+      position: relative;
+      z-index: 2;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold-300), var(--gold-600));
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-glass.scrolled .nav-link {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .nav-glass.scrolled .nav-link:hover {
+      color: white;
+    }
+
+    .menu-toggle-glass {
+      display: none;
+      padding: 0.6rem;
+      border-radius: 50%;
+      cursor: pointer;
+      color: white;
+      background: rgba(200, 160, 70, 0.2);
+      border: 1px solid rgba(200, 160, 70, 0.3);
+      font-size: 1.2rem;
+      transition: all 0.3s;
+    }
+
+    .menu-toggle-glass:hover {
+      background: rgba(200, 160, 70, 0.4);
+      transform: scale(1.05);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .menu-toggle-glass {
+        display: block;
+      }
+
+      .navlinks-glass {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.96);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+        display: none;
+        z-index: 999;
+        border-bottom: 1px solid rgba(200, 160, 70, 0.2);
+      }
+
+      .navlinks-glass.active {
+        display: flex;
+        animation: slideDown 0.4s ease-out;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    /* ===== CINEMATIC HERO ===== */
+    .hero-cinematic {
+      position: relative;
+      height: 100vh;
+      min-height: 800px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Background Slideshow */
+    .hero-slideshow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      z-index: 1;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* Gradient Overlay */
+    .hero-overlay-glass {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(50, 30, 10, 0.7) 100%);
+      z-index: 3;
+    }
+
+    /* Glass Content Card */
+    .hero-glass-card {
+      position: relative;
+      z-index: 4;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 3rem;
+      max-width: 1850px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      transform: translateY(0);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .badge-premium {
+      display: inline-block;
+      background: rgba(255, 215, 0, 0.2);
+      color: #FFD700;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .hero-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.05;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      color: white;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #FFD700, #C8A046, #8B5E3C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-cinematic {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Horizontal center */
+}
+
+/* Ensure the container is also centered */
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Make sure the glass card is centered within the container */
+.hero-glass-card {
+  position: relative;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 3rem;
+  max-width: 1950px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  animation: float 6s ease-in-out infinite;
+  text-align: center; /* Optional: ensures text is centered */
+}
+
+    /* Glass Buttons */
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      transition: 0.3s;
+      margin-right: 1rem;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(200, 160, 70, 0.3);
+    }
+
+    .btn-outline-glass {
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      color: white;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      transition: 0.3s;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-outline-glass:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 215, 0, 0.8);
+      color: #FFD700;
+      transform: translateY(-3px);
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      z-index: 5;
+      animation: fadeInOut 2s infinite;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    .mouse-scroll {
+      width: 24px;
+      height: 38px;
+      margin: 15px auto 0;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 25px;
+      position: relative;
+    }
+
+    .mouse-wheel {
+      width: 4px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 2px;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: wheelScroll 1.5s ease infinite;
+    }
+
+    @keyframes wheelScroll {
+      0% { top: 6px; opacity: 1; }
+      100% { top: 26px; opacity: 0; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-glass-card {
+        padding: 2rem;
+        margin: 0 1.5rem;
+      }
+
+      .hero-title {
+        font-size: clamp(2.2rem, 8vw, 3.5rem);
+      }
+
+      .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .btn-glass, .btn-outline-glass {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+      }
+    }
+
+    /* ===== DISCOVERY & SCALE SECTION ===== */
+.discovery-scale-section {
+  padding: 8rem 0;
+  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.split-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  height: 650px;
+}
+
+.visual-panel {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(157, 113, 113, 0.4);
+  background: linear-gradient(135deg, rgba(200, 160, 70, 0.1), rgba(100, 80, 35, 0.2));
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(200, 160, 70, 0.15);
+}
+
+.visual-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1582560481030-9cb753ff6e33?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  z-index: 1;
+  opacity: 0.65;
+}
+
+.visual-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visual-badge {
+  display: inline-block;
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.visual-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.visual-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.visual-cta .btn-glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.visual-cta .btn-glass:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(200, 160, 70, 0.3);
+}
+
+/* Particle Animation */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 215, 0, 0.6);
+  border-radius: 50%;
+  animation: floatParticle 8s infinite ease-in-out;
+  animation-delay: calc(var(--i) * 1s);
+  top: calc(var(--i) * 12%);
+  left: calc(var(--i) * 14%);
+}
+
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0.6; }
+  50% { transform: translateY(-20px) translateX(10px); opacity: 0.2; }
+}
+
+/* Stats Panel */
+.stats-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats-header {
+  text-align: left;
+}
+
+.stats-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.stats-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Animated Stat Cards */
+.stats-grid-animated {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.stat-glass-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFD700;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  transition: 0.3s;
+}
+
+.stat-glass-card:hover .stat-icon {
+  background: rgba(255, 215, 0, 0.25);
+  transform: scale(1.1);
+}
+
+.stat-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .split-layout {
+    height: 550px;
+  }
+  .visual-content {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .split-layout {
+    flex-direction: column;
+    height: auto;
+  }
+  .visual-panel {
+    height: 450px;
+  }
+  .stats-panel {
+    order: -1;
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 1.5rem;
+  }
+  .discovery-scale-section {
+    padding: 5rem 0;
+  }
+  .visual-panel {
+    height: 380px;
+  }
+  .visual-content {
+    padding: 2rem;
+  }
+  .visual-title {
+    font-size: 2.5rem;
+  }
+  .stats-grid-animated {
+    grid-template-columns: 1fr;
+  }
+  .stat-glass-card {
+    min-height: 160px;
+    padding: 1.5rem;
+  }
+}
+
+
+
+/* ===== PREMIUM LIGHT-THEMED FOOTER ===== */
+  /* background: linear-gradient(135deg, #00040f 0%, #1a150a 100%); */
+
+.footer-premium-light {
+  /* background: linear-gradient(180deg, #fffdf7 0%, #fff9f0 100%); */
+  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  padding: 6rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(200, 160, 70, 0.15);
+}
+
+.footer-premium-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(200, 160, 70, 0.03), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footer-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer Top Grid */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Footer Column */
+.footer-column {
+  position: relative;
+}
+
+/* Brand Panel */
+.footer-brand .brand-glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 2.5rem;
+  border: 1px solid rgba(200, 160, 70, 0.15);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.footer-brand .brand-glass-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border-color: rgba(200, 160, 70, 0.3);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 247, 214, 0.9), rgba(210, 168, 79, 0.6) 60%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--gold-800);
+  box-shadow: 0 4px 12px rgba(180, 137, 47, 0.2);
+}
+
+.brand-logo h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--gold-800);
+}
+
+.brand-description {
+  color: var(--ink-700);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Social Icons */
+.social-glow {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(200, 160, 70, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-800);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(200, 160, 70, 0.2);
+}
+
+.social-icon:hover {
+  background: rgba(200, 160, 70, 0.25);
+  color: white;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(200, 160, 70, 0.3);
+  border-color: rgba(200, 160, 70, 0.4);
+}
+
+/* Footer Headings */
+.footer-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-300), var(--gold-600));
+  border-radius: 1px;
+}
+
+/* Footer Links */
+.footer-links-list {
+  list-style: none;
+}
+
+.footer-link {
+  display: block;
+  color: var(--ink-700);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  position: relative;
+  padding-left: 1rem;
+  color: white;
+}
+
+.footer-link::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.3s;
+  color: var(--gold-600);
+  font-size: 0.8rem;
+}
+
+.footer-link:hover {
+  color: var(--gold-800);
+  padding-left: 1.3rem;
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Footer Divider */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 160, 70, 0.3), transparent);
+  margin: 3rem 0;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.reserved {
+  color: var(--gold-800);
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.footer-certifications {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cert-badge {
+  background: rgba(200, 160, 70, 0.1);
+  color: var(--gold-800);
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(200, 160, 70, 0.2);
+  transition: all 0.3s;
+}
+
+.cert-badge:hover {
+  background: rgba(200, 160, 70, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .footer-top {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-premium-light {
+    padding: 4rem 0 2rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reserved {
+    margin-left: 0;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .footer-certifications {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-glass-panel {
+    padding: 2rem 1.5rem;
+  }
+
+  .brand-logo {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .social-glow {
+    justify-content: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Floating Glass Navigation -->
+  <header class="nav-glass" id="mainNav">
+    <div class="container wrap">
+      <a class="brand" href="#top" aria-label="Uganda Gold Home">
+        <span aria-hidden="true" class="brand-badge-glass">UG</span>
+        <h1>UGANDA GOLD</h1>
+      </a>
+      <nav class="navlinks-glass" id="navLinks">
+        <a href="#about" class="nav-link"><span>Discovery</span></a>
+        <a href="#stats" class="nav-link"><span>Metrics</span></a>
+        <a href="#opportunities" class="nav-link"><span>Invest</span></a>
+        <a href="#regions" class="nav-link"><span>Regions</span></a>
+        <a href="#testimonials" class="nav-link"><span>Voices</span></a>
+        <a href="#contact" class="nav-link"><span>Connect</span></a>
+      </nav>
+      <button class="menu-toggle-glass" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  
+
+<!-- Cinematic Hero Section -->
+<section class="hero-cinematic" id="top">
+  <!-- Background Slideshow -->
+  <div class="hero-slideshow">
+    <div class="slide active" style="background-image: url('https://thumbs.dreamstime.com/b/gold-texture-background-hd-wallpaper-322425479.jpg');"></div>
+    <div class="slide" style="background-image: url('https://www.independent.co.ug/wp-content/uploads/2019/01/Gold.jpg');"></div>
+    <div class="slide" style="background-image: url('https://goldbuyersafrica.com/wp-content/uploads/2025/04/Gold-rates-in-uganda.jpeg');"></div>
+    <div class="slide" style="background-image: url('https://www.independent.co.ug/wp-content/uploads/2019/01/Gold.jpg');"></div>
+  </div>
+
+  <!-- Animated Overlay -->
+  <div class="hero-overlay-glass"></div>
+
+  <!-- Floating Glass Content Card -->
+  <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <div class="hero-glass-card" style="
+      align-items: center;
+      gap: 3rem;
+      max-width: 1900px;
+      padding: 3rem;
+      position: relative;
+      z-index: 4;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      animation: float 6s ease-in-out infinite;
+    ">
+        <!-- Badge - Centered at Top of Entire Card -->
+        <div class="badge-premium" style="margin: 0 auto 1.5rem; text-align: center;">
+          EXCLUSIVE OPPORTUNITY
+        </div>
+
+        <div style="
+      display: flex;">
+
+      <!-- Left: Text Content -->
+      <div style="flex: 1; text-align: left; min-width: 0;">
+
+        <!-- Title -->
+        <h1 class="hero-title" style="margin-bottom: 1.5rem;">
+          Uganda’s<br><span class="gradient-text">$12 Trillion</span><br>Gold Frontier
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle" style="margin-bottom: 2.5rem; line-height: 1.7;">
+          Unlock access to 31 million metric tonnes of high-grade gold reserves through government-backed licenses and strategic partnerships.
+        </p>
+      </div>
+
+      <!-- Right: Image -->
+      <div style="
+        flex: 0 0 620px;
+        height: 420px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,0.1);
+      ">
+        <img src="images/hero_image.png" alt="Uganda Gold Frontier" style="
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          object-position: center;
+          filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+        ">
+      </div>
+
+    </div>
+
+        <!-- Buttons - Centered at Bottom of Entire Card -->
+        <div class="hero-buttons" style="display: flex; justify-content: center; gap: 1rem; margin-top: auto; flex-wrap: wrap;">
+          <a href="#opportunities" class="btn btn-glass">Explore Investment Paths</a>
+          <a href="#contact" class="btn btn-outline-glass">Schedule Consultation</a>
+        </div>
+
+    
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll to Discover</span>
+    <div class="mouse-scroll">
+      <div class="mouse-wheel"></div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+
+
+
+  <!-- DISCOVERY & SCALE SECTION -->
+<section id="about" class="discovery-scale-section">
+  <div class="container-fluid">
+    <div class="split-layout">
+      <!-- Visual Panel -->
+      <div class="visual-panel">
+        <div class="visual-content">
+          <div class="visual-badge">Geological Breakthrough</div>
+          <h2 class="visual-title">The <span class="gradient-text">Largest</span> Gold Discovery of the Century</h2>
+          <p class="visual-subtitle">Satellite imagery and AI-driven geophysics have confirmed 31 million metric tonnes across 6 high-potential zones — a resource unmatched in modern mining history.</p>
+          <div class="visual-cta">
+            <a href="#regions" class="btn btn-glass">Explore Regions →</a>
+          </div>
+        </div>
+        <div class="visual-bg">
+          <div class="particle" style="--i:1;"></div>
+          <div class="particle" style="--i:2;"></div>
+          <div class="particle" style="--i:3;"></div>
+          <div class="particle" style="--i:4;"></div>
+          <div class="particle" style="--i:5;"></div>
+          <div class="particle" style="--i:6;"></div>
+          <div class="particle" style="--i:7;"></div>
+          <div class="particle" style="--i:8;"></div>
+        </div>
+      </div>
+
+      <!-- Stats Panel -->
+      <div class="stats-panel">
+        <div class="stats-header">
+          <h3 class="stats-title">By The Numbers</h3>
+          <p class="stats-subtitle">Quantifying the unprecedented scale of Uganda’s gold reserves.</p>
+        </div>
+        <div class="stats-grid-animated" id="statsGrid">
+          <div class="stat-glass-card" data-target="31000000" data-suffix="MT">
+            <div class="stat-icon">
+              <i class="fas fa-globe-africa"></i>
+            </div>
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">Metric Tonnes Reserves</div>
+          </div>
+          <div class="stat-glass-card" data-target="12000000000000" data-suffix="USD">
+            <div class="stat-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="stat-number" data-value="0">$0</div>
+            <div class="stat-label">Estimated Market Value</div>
+          </div>
+          <div class="stat-glass-card" data-target="100000" data-suffix="+">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">Jobs to be Created</div>
+          </div>
+          <div class="stat-glass-card" data-target="24" data-suffix="">
+            <div class="stat-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">Active Licenses</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- INVESTMENT PATHWAYS - ALTERNATING LAYOUT (NO CARDS) -->
+<section id="opportunities" class="contact-section" style="padding: 8rem 0; background: #08080d;">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; margin: 0 auto; text-align: center;">
+    <!-- Title -->
+    <h2 class="footer-heading" style="
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    ">Investment Pathways</h2>
+    <!-- Description -->
+    <p style="
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 400;
+    ">
+      Multiple entry points for investors across the gold value chain, from exploration to refining and export.
+    </p>
+
+    <!-- Row 1: Mining Concessions (Image Left, Text Right) -->
+    <div style="
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      min-width: 300px;
+      max-width: 1000px;
+      width: 100%;
+      margin-top: 3rem;
+    ">
+      <!-- Image -->
+      <div style="flex: 0 0 250px; height: 200px; border-radius: 16px; overflow: hidden; position: relative;">
+        <img src="images/mining.JPG" alt="Mining Concessions" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(255, 215, 0, 0.2); color: #FFD700; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Licensing</div>
+      </div>
+      <!-- Text Content -->
+      <div style="flex: 1; text-align: left;">
+        <h3 style="
+          font-family: 'Inter', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 800;
+          color: white;
+          margin-bottom: 0.8rem;
+        ">Mining Concessions</h3>
+        <p style="
+          font-family: 'Inter', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 1.5rem;
+        ">
+          Secure exclusive rights to explore and develop gold reserves across Uganda's most promising regions.
+        </p>
+        <button style="
+          background: rgba(255, 215, 0, 0.2);
+          border: 1px solid rgba(255, 215, 0, 0.4);
+          color: #FFD700;
+          font-weight: 600;
+          padding: 0.8rem 1.5rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.3s;
+          font-size: 0.95rem;
+        " onclick="alert('Inquiry submitted!')">
+          Inquire Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Row 2: Joint Ventures (Text Left, Image Right) -->
+    <div style="
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      min-width: 300px;
+      max-width: 1000px;
+      width: 100%;
+      margin-top: 3rem;
+      flex-direction: row-reverse;
+    ">
+      <!-- Image -->
+      <div style="flex: 0 0 250px; height: 200px; border-radius: 16px; overflow: hidden; position: relative;">
+        <img src="images/joint.PNG" alt="Joint Ventures" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(255, 215, 0, 0.2); color: #FFD700; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Partnership</div>
+      </div>
+      <!-- Text Content -->
+      <div style="flex: 1; text-align: left;">
+        <h3 style="
+          font-family: 'Inter', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 800;
+          color: white;
+          margin-bottom: 0.8rem;
+        ">Joint Ventures</h3>
+        <p style="
+          font-family: 'Inter', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 1.5rem;
+        ">
+          Collaborate with established local operators through equity partnerships and profit-sharing models.
+        </p>
+        <button style="
+          background: rgba(255, 215, 0, 0.2);
+          border: 1px solid rgba(255, 215, 0, 0.4);
+          color: #FFD700;
+          font-weight: 600;
+          padding: 0.8rem 1.5rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.3s;
+          font-size: 0.95rem;
+        " onclick="alert('Inquiry submitted!')">
+          Inquire Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Row 3: Equipment & Services (Image Left, Text Right) -->
+    <div style="
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      min-width: 300px;
+      max-width: 1000px;
+      width: 100%;
+      margin-top: 3rem;
+    ">
+      <!-- Image -->
+      <div style="flex: 0 0 250px; height: 200px; border-radius: 16px; overflow: hidden; position: relative;">
+        <img src="images/equipment.JPG" alt="Equipment & Services" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(255, 215, 0, 0.2); color: #FFD700; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Supply Chain</div>
+      </div>
+      <!-- Text Content -->
+      <div style="flex: 1; text-align: left;">
+        <h3 style="
+          font-family: 'Inter', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 800;
+          color: white;
+          margin-bottom: 0.8rem;
+        ">Equipment & Services</h3>
+        <p style="
+          font-family: 'Inter', sans-serif;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 1.5rem;
+        ">
+          Provide essential mining machinery, technology, and support services to active operations.
+        </p>
+        <button style="
+          background: rgba(255, 215, 0, 0.2);
+          border: 1px solid rgba(255, 215, 0, 0.4);
+          color: #FFD700;
+          font-weight: 600;
+          padding: 0.8rem 1.5rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.3s;
+          font-size: 0.95rem;
+        " onclick="alert('Inquiry submitted!')">
+          Inquire Now
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KEY MINING REGIONS -->
+<section id="regions" class="regions-section">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;" >
+    <div class="regions-header">
+      <h2 class="section-title" style="color: white;">Key Mining Regions</h2>
+      <p class="section-subtitle" style="color: white;">
+        Uganda's gold deposits are concentrated in these high-potential regions, each
+        offering unique geological advantages.
+      </p>
+    </div>
+
+    <div class="regions-grid">
+      <!-- Region Card -->
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/a_k1.JPEG');">
+          <span class="region-badge">Primary Zone</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Karamoja Region</h3>
+          <p style="color: white;">
+            Northeastern frontier with extensive alluvial deposits and estimated 14M metric tonnes of reserves.
+            Ideal for large-scale open-pit operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/a_k2.JPEG');">
+          <span class="region-badge active">Active Mining</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Mubende District</h3>
+          <p style="color: white;">
+            Historic gold mining area with proven high-grade veins (avg. 18g/ton). Existing infrastructure
+            supports immediate production.
+          </p>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/a_k3.JPEG');">
+          <span class="region-badge purity">High Purity</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Busia Corridor</h3>
+          <p style="color: white;">
+            Border region with Kenya showing exceptional purity levels (22–24K). Artisanal heritage now
+            transitioning to industrial operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/a_k4.JPEG');">
+          <span class="region-badge reef">Reef Deposits</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Buhweju District</h3>
+          <p style="color: white;">
+            Western Uganda's gold heartland with reef deposits at shallow depths (50–150m). 8 active licenses
+            available for joint ventures.
+          </p>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/a_k5.JPEG');">
+          <span class="region-badge green">Greenfield</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Kassanda Belt</h3>
+          <p style="color: white;">
+            Emerging greenfield site with multi-ounce pockets detected. New geophysical data reveals untapped potential.
+          </p>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <div class="region-image" style="background-image: url('images/images:a_k6.JPG');">
+          <span class="region-badge tech">High-Tech</span>
+        </div>
+        <div class="region-content">
+          <h3 style="color: white;">Western Uganda</h3>
+          <p style="color: white;">
+            Volcanic belt with complex mineralization. Requires advanced extraction tech but offers exceptional
+            long-term yields.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section */
+.regions-section {
+  padding: 7rem 0;
+  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  /* background: linear-gradient(135deg, #fffdf7 0%, #fff9f0 100%); */
+}
+.regions-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  color: var(--gold-800);
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  color: var(--ink-700);
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Card */
+.region-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(200, 160, 70, 0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+.region-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.region-image {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.region-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(255, 215, 0, 0.85);
+  color: #3a2c00;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+.region-badge.active { background: rgba(255, 193, 7, 0.9); }
+.region-badge.purity { background: rgba(241, 196, 15, 0.9); }
+.region-badge.reef { background: rgba(255, 159, 67, 0.9); }
+.region-badge.green { background: rgba(76, 175, 80, 0.9); color: white; }
+.region-badge.tech { background: rgba(33, 150, 243, 0.9); color: white; }
+
+/* Content */
+.region-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+.region-content h3 {
+  font-size: 1.3rem;
+  color: var(--gold-800);
+  margin-bottom: 0.8rem;
+}
+.region-content p {
+  color: var(--ink-700);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+</style>
+
+
+
+
+
+
+<!-- INVESTOR SUCCESS STORIES - PREMIUM GLASS MORPHIC -->
+  <!-- <div class="container"  style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; text-align: center;"> -->
+<!--<section id="testimonials" class="contact-section" style="padding: 8rem 0; position: relative; overflow: hidden;">
+  <div class="hero-slideshow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+    <div class="slide active" style="background-image: url('https://thumbs.dreamstime.com/b/gold-texture-background-hd-wallpaper-322425479.jpg'); background-size: cover; background-position: center; filter: blur(10px);"></div>
+    <div class="slide" style="background-image: url('https://www.independent.co.ug/wp-content/uploads/2019/01/Gold.jpg'); background-size: cover; background-position: center; filter: blur(10px);"></div>
+    <div class="slide" style="background-image: url('https://thumbs.dreamstime.com/b/gold-texture-background-hd-wallpaper-322425479.jpg'); background-size: cover; background-position: center; filter: blur(10px);"></div>
+  </div>
+
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.7); z-index: 2;"></div>
+
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; position: relative; z-index: 3; max-width: 1200px; margin: 0 auto; text-align: center;">
+    <h2 class="footer-heading" style="font-size: 2.5rem; color: var(--gold-800); margin-bottom: 1rem;">Investor Success Stories</h2>
+    <div style="width: 40px; height: 2px; background: var(--gold-600); margin: 0 auto 2rem;"></div>
+    <p style="color: var(--ink-700); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+      Global mining leaders share their experiences developing Uganda’s gold sector.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          Our Ugandan gold operations have exceeded expectations with 28% ROI in the first year. The regulatory framework is transparent and efficient.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">Michael Chen</strong>
+            <p style="color: #666; font-size: 0.85rem;">Golden Horizon Investments</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          Uganda’s mining sector offers the perfect balance of resource potential and investment security. Our joint venture has been seamless.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">Sarah Johnson</strong>
+            <p style="color: #666; font-size: 0.85rem;">African Resources Fund</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          The scale of Uganda’s gold reserves is unmatched in Africa. We’ve tripled our initial investment and are expanding operations.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="James Wilson" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">James Wilson</strong>
+            <p style="color: #666; font-size: 0.85rem;">Global Mining Ventures</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          As a local entrepreneur, I've seen firsthand how gold investments are transforming communities while delivering strong returns.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina Nalwoga" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">Amina Nalwoga</strong>
+            <p style="color: #666; font-size: 0.85rem;">Uganda Mineral Partners</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          The government's commitment to infrastructure development makes Uganda our top choice for African gold investments.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="David Müller" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">David Müller</strong>
+            <p style="color: #666; font-size: 0.85rem;">European Mineral Group</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        padding: 2rem;
+        box-shadow: 0 20px 50px rgba(200, 160, 70, 0.3);
+        border: 1px solid rgba(200, 160, 70, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+      ">
+        <div style="position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: var(--gold-600);">"</div>
+        <p style="color: #0f0f0f; font-style: italic; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+          After evaluating multiple African markets, Uganda stood out for its geological potential and investor-friendly policies.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Lisa Zhang" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <strong style="color: var(--gold-800); font-weight: 600;">Lisa Zhang</strong>
+            <p style="color: #666; font-size: 0.85rem;">Asia Mining Consortium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EXPRESS INVESTMENT INTEREST - GLASS FORM -->
+<section id="investment-form" class="contact-section" style="padding: 8rem 0; position: relative; overflow: hidden;">
+  <!-- Background -->
+  
+  <!-- Content -->
+  <div class="container" style="position: relative; z-index: 3; text-align: center; display: block;">
+    <!-- Heading -->
+    <div style="margin-bottom: 3rem;">
+      <h2 class="footer-heading" style="font-size: 2.5rem; color: white; margin-bottom: 1rem;">Express Investment Interest</h2>
+      <p style="color: white; font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+        Complete this form to receive our detailed investment prospectus and schedule a consultation with our mining experts.
+      </p>
+    </div>
+
+    <!-- Glass Form -->
+    <div class="form-glass">
+      <form action="#" method="POST" class="form-grid">
+        <!-- Row 1 -->
+        <div>
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Row 2 -->
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div>
+          <label for="company">Company/Organization</label>
+          <input type="text" id="company" name="company" placeholder="Enter company name">
+        </div>
+
+        <!-- Row 3 -->
+        <div>
+          <label for="country">Country of Origin</label>
+          <input type="text" id="country" name="country" placeholder="Enter country" required>
+        </div>
+        <div>
+          <label for="interest">Primary Interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Select investment type</option>
+            <option value="mining-license">Mining License</option>
+            <option value="joint-venture">Joint Venture</option>
+            <option value="equipment-supply">Equipment Supply</option>
+            <option value="refining-operations">Refining Operations</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Full-width fields -->
+        <div class="full">
+          <label for="budget">Investment Budget (USD)</label>
+          <select id="budget" name="budget" required>
+            <option value="">Select range</option>
+            <option value="1-10m">$1M - $10M</option>
+            <option value="10-50m">$10M - $50M</option>
+            <option value="50-100m">$50M - $100M</option>
+            <option value="100m+">$100M+</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="objectives">Investment Objectives</label>
+          <textarea id="objectives" name="objectives" rows="4" placeholder="Tell us about your investment goals..." required></textarea>
+        </div>
+
+        <div class="full" style="text-align:center;">
+          <button type="submit" class="btn-glass">Submit Investment Interest</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Glass card */
+  .form-glass {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Grid Layout */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem;
+  }
+  .form-grid .full {
+    grid-column: 1 / -1;
+  }
+
+  /* Inputs */
+  .form-grid label {
+    font-weight: 600;
+    color: var(--ink-900);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  .form-grid input,
+  .form-grid select,
+  .form-grid textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(200, 160, 70, 0.25);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.85);
+    outline: none;
+    transition: all 0.3s;
+  }
+  .form-grid input:focus,
+  .form-grid select:focus,
+  .form-grid textarea:focus {
+    border-color: var(--gold-600);
+    box-shadow: 0 0 10px rgba(200, 160, 70, 0.4);
+  }
+
+  /* Button */
+  .form-grid button {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    background: linear-gradient(90deg, var(--gold-300), var(--gold-600));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .form-grid button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(200, 160, 70, 0.4);
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- CONTACT US SECTION - FIXED -->
+<section id="contact" class="contact-section" style="padding: 8rem 0; background: linear-gradient(135deg, #00040f 0%, #00040f 100%);">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <!-- Title & Description - TOP CENTERED -->
+    <div style="margin-bottom: 4rem;">
+      <h2 class="footer-heading" style="font-size: 2.5rem; color: white; margin-bottom: 1rem;">Get In Touch</h2>
+      <p style="color: white; font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+        Reach out to the Uganda Gold Development Authority for licensing, investment inquiries, or partnership opportunities.
+      </p>
+    </div>
+
+    <!-- Main Content Row: Left (Info Cards) + Right (Form) -->
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; width: 100%; justify-content: space-between; align-items: flex-start;">
+      <!-- Left Column: Info Cards -->
+      <div style="flex: 1; min-width: 300px;">
+        <!-- Office Location Card -->
+        <div class="contact-card" style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(200, 160, 70, 0.1); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-map-marker-alt" style="font-size: 1.1rem; color: var(--gold-800);"></i>
+            </div>
+            <h4 style="font-weight: 700; font-size: 1.1rem; color: var(--ink-900); margin: 0;">Office Location</h4>
+          </div>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin: 0;">
+            Ministry of Energy & Mineral Development<br>
+            Amber House, Plot 2-12 Apollo Kaggwa Road<br>
+            Kampala, Uganda
+          </p>
+        </div>
+
+        <!-- Email Us Card -->
+        <div class="contact-card" style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: 1rem; transition: all 0.3s ease;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(200, 160, 70, 0.1); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-envelope" style="font-size: 1.1rem; color: var(--gold-800);"></i>
+            </div>
+            <h4 style="font-weight: 700; font-size: 1.1rem; color: var(--ink-900); margin: 0;">Email Us</h4>
+          </div>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin: 0;">
+            <a href="mailto:investments@golduganda.ug" style="color: var(--gold-800); text-decoration: none; font-weight: 600;">investments@golduganda.ug</a>
+          </p>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin: 0.3rem 0 0;">
+            <a href="mailto:licensing@golduganda.ug" style="color: var(--gold-800); text-decoration: none; font-weight: 600;">licensing@golduganda.ug</a>
+          </p>
+        </div>
+
+        <!-- Call Us Card -->
+        <div class="contact-card" style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: 1rem; transition: all 0.3s ease;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(200, 160, 70, 0.1); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-phone-alt" style="font-size: 1.1rem; color: var(--gold-800);"></i>
+            </div>
+            <h4 style="font-weight: 700; font-size: 1.1rem; color: var(--ink-900); margin: 0;">Call Us</h4>
+          </div>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin: 0;">
+            <strong>Office:</strong> +256 414 234 567
+          </p>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin: 0.3rem 0 0;">
+            <strong>24/7 Hotline:</strong> +256 700 123 456
+          </p>
+          <p style="color: var(--ink-700); line-height: 1.5; font-size: 0.9rem; margin-top: 0.8rem; padding-top: 0.5rem; border-top: 1px dashed rgba(200, 160, 70, 0.3);">
+            <strong>Working Hours:</strong><br>
+            Monday - Friday: 8:00 AM - 6:00 PM EAT<br>
+            Weekends: By appointment only
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Form -->
+      <div style="flex: 1; min-width: 300px;">
+        <div style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+          <h3 style="font-family: 'Inter', sans-serif; font-size: 1.8rem; color: var(--ink-900); margin-bottom: 1.5rem;">Send Us a Message</h3>
+          <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <input type="text" name="name" placeholder="Your Name *" required style="
+              padding: 1rem;
+              border: 1px solid rgba(200, 160, 70, 0.2);
+              border-radius: 10px;
+              font-family: 'Inter', sans-serif;
+              font-size: 0.95rem;
+              outline: none;
+              transition: all 0.3s;
+            " />
+            <input type="email" name="email" placeholder="Your Email *" required style="
+              padding: 1rem;
+              border: 1px solid rgba(200, 160, 70, 0.2);
+              border-radius: 10px;
+              font-family: 'Inter', sans-serif;
+              font-size: 0.95rem;
+              outline: none;
+              transition: all 0.3s;
+            " />
+            <input type="text" name="subject" placeholder="Subject *" required style="
+              padding: 1rem;
+              border: 1px solid rgba(200, 160, 70, 0.2);
+              border-radius: 10px;
+              font-family: 'Inter', sans-serif;
+              font-size: 0.95rem;
+              outline: none;
+              transition: all 0.3s;
+            " />
+            <textarea name="message" rows="5" placeholder="Your Message *" required style="
+              padding: 1rem;
+              border: 1px solid rgba(200, 160, 70, 0.2);
+              border-radius: 10px;
+              font-family: 'Inter', sans-serif;
+              font-size: 0.95rem;
+              outline: none;
+              resize: vertical;
+              transition: all 0.3s;
+            "></textarea>
+            <button type="submit" class="btn-glass" style="background: rgba(200, 160, 70, 0.2); color: var(--gold-800); border: 1px solid rgba(200, 160, 70, 0.3); font-weight: 600; padding: 1rem 2rem; border-radius: 50px; cursor: pointer; transition: all 0.3s;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PREMIUM LIGHT-THEMED FOOTER -->
+<footer class="footer-premium-light">
+  <div class="footer-container">
+    <div class="footer-top">
+      <!-- Brand Column -->
+      <div class="footer-column footer-brand">
+        <div class="brand-glass-panel">
+          <div class="brand-logo">
+            <span class="logo-badge">UG</span>
+            <h3>UGANDA GOLD</h3>
+          </div>
+          <p class="brand-description">Official portal for the $12T gold discovery. Partner with Uganda to unlock generational wealth through ethical, government-backed mining ventures.</p>
+          <div class="social-glow">
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Links Columns -->
+      <div class="footer-column">
+        <h4 class="footer-heading">Investor Resources</h4>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">Mining Act 2024</a></li>
+          <li><a href="#" class="footer-link">Investment Prospectus</a></li>
+          <li><a href="#" class="footer-link">Geological Survey Data</a></li>
+          <li><a href="#" class="footer-link">Tax Incentive Guide</a></li>
+          <li><a href="#" class="footer-link">FAQ & Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#about" class="footer-link">Discovery & Scale</a></li>
+          <li><a href="#opportunities" class="footer-link">Investment Pathways</a></li>
+          <li><a href="#regions" class="footer-link">Mining Regions</a></li>
+          <li><a href="#testimonials" class="footer-link">Investor Testimonials</a></li>
+          <li><a href="#contact" class="footer-link">Contact Authority</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">Legal & Compliance</h4>
+        <ul class="footer-links-list">
+          <li><a href="#" class="footer-link">Terms of Engagement</a></li>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Anti-Bribery Policy</a></li>
+          <li><a href="#" class="footer-link">ESG Framework</a></li>
+          <li><a href="#" class="footer-link">Regulatory Disclosures</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-bar">
+      <p class="copyright">© <span id="currentYear">2025</span> Uganda Gold Development Authority. All rights reserved. <span class="reserved">Confidential & Proprietary</span></p>
+      <div class="footer-certifications">
+        <span class="cert-badge">ISO 9001 Certified</span>
+        <span class="cert-badge">Member - World Gold Council</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  
+
+
+  
+
+  
+
+
+
+  <script>
+    // Sticky header on scroll
+    const header = document.querySelector('.nav-glass');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.innerHTML = navLinks.classList.contains('active') ? 
+        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+
+    // ===== AUTO-ROTATING HERO SLIDESHOW =====
+    function initHeroSlideshow() {
+      const slides = document.querySelectorAll('.hero-slideshow .slide');
+      let currentSlide = 0;
+
+      function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      // Change slide every 6 seconds
+      setInterval(showNextSlide, 6000);
+    }
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initHeroSlideshow();
+    });
+  </script>
+
+<script>
+  
+</script>
+
+</body>
+</html>
+
+

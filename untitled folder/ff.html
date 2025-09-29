@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Gold | Premium Gold Trading & Investment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        .cta-button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #1a252f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+        }
+
+        .sub-headline {
+            font-size: 18px;
+            margin: 30px 0;
+            font-weight: 500;
+            color: #FFD700;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 22px;
+            margin: 20px 0 15px;
+            color: #2c3e50;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .process-step {
+            flex: 0 0 calc(33.333% - 30px);
+            margin-bottom: 40px;
+            position: relative;
+            padding-left: 70px;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: #FFD700;
+            color: #2c3e50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .process-step h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .testimonials .section-title {
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #FFD700;
+        }
+
+        /* Stats/Results Section */
+        .results {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #2c3e50;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .stat-id {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            background: rgba(255,255,255,0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .plan-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px 30px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .plan-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .plan-price {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .plan-price span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #FFD700;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .process-step {
+                flex: 0 0 100%;
+                padding-left: 70px;
+                margin-bottom: 40px;
+            }
+
+            .pricing-plans {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Uganda<span>Gold</span></div>
+            <a href="#get-started" class="cta-button">Get Started Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>The Ultimate Gold Investment Platform in Uganda</h1>
+            <p>Uganda Gold is the most advanced gold trading and investment platform, leveraging secure transactions and 24/7 market access. Start building your wealth today!</p>
+            <div class="sub-headline">#InvestSecurelyGrowWealth</div>
+            <a href="#get-started" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Uganda Gold?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Premium Gold Sourcing</h3>
+                    <p>Access to the highest quality Ugandan gold directly from certified mines and refineries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Transactions</h3>
+                    <p>Bank-level security protocols to protect your investments and ensure safe, transparent trading.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Market Intelligence</h3>
+                    <p>Real-time gold price analytics and market trends to help you make informed investment decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Export</h3>
+                    <p>Seamless international shipping and export documentation for global buyers and investors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile App</h3>
+                    <p>Manage your gold portfolio anytime, anywhere with our intuitive mobile application.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated customer service team available 24/7 to assist with all your gold trading needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">How Uganda Gold Works</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Account</h3>
+                    <p>Sign up in minutes with our secure registration process. Verify your identity to begin trading.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Fund Your Investment</h3>
+                    <p>Deposit funds using your preferred payment method. We accept mobile money, bank transfers, and more.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Purchase Gold</h3>
+                    <p>Browse our selection of gold products and make your purchase at competitive market prices.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Store or Export</h3>
+                    <p>Choose to store your gold in our secure vaults or arrange for international export and delivery.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Track & Grow</h3>
+                    <p>Monitor your investment's performance and receive regular updates on market opportunities.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Sell for Profit</h3>
+                    <p>Sell your gold back to us or on the international market when prices are favorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Uganda Gold has transformed my investment portfolio. The process is seamless and the returns have been outstanding!"</p>
+                    <p class="testimonial-author">- Nakato Kintu, Kampala</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The market insights provided by Uganda Gold are invaluable. I've made smarter investment decisions since joining."</p>
+                    <p class="testimonial-author">- Kato Muwanga, Entebbe</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The customer support team is exceptional. They guided me through every step of my first gold investment."</p>
+                    <p class="testimonial-author">- Nalwoga Ssebaggala, Jinja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results/Stats Section -->
+    <section class="results">
+        <div class="container">
+            <h2 class="section-title">Our Clients' Success Stories</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Initial Investment</div>
+                    <div class="stat-value">$225.17 <span>+175%</span></div>
+                    <div class="stat-label">Total Return</div>
+                    <div class="stat-value">$394.50</div>
+                    <div class="stat-id">ID: UGF-TTU2MFV0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Initial Investment</div>
+                    <div class="stat-value">$854.11 <span>+165%</span></div>
+                    <div class="stat-label">Total Return</div>
+                    <div class="stat-value">$1,409.80</div>
+                    <div class="stat-id">ID: UGM-P0694I5T</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Initial Investment</div>
+                    <div class="stat-value">$139.76 <span>+162%</span></div>
+                    <div class="stat-label">Total Return</div>
+                    <div class="stat-value">$226.60</div>
+                    <div class="stat-id">ID: UGM-TTU2MFV0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Initial Investment</div>
+                    <div class="stat-value">$452.94 <span>+161%</span></div>
+                    <div class="stat-label">Total Return</div>
+                    <div class="stat-value">$733.70</div>
+                    <div class="stat-id">ID: UGF-ZWBEM8LR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="get-started">
+        <div class="container">
+            <h2>Start Your Gold Investment Journey Today</h2>
+            <p>Getting started with Uganda Gold is simple and secure. Join thousands of satisfied investors who are building wealth with Uganda's most precious resource.</p>
+            <a href="#" class="cta-button">Create Your Account Now</a>
+            
+            <div class="pricing-plans">
+                <div class="plan-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">$16.99<span>/week</span></div>
+                    <p>Perfect for beginners</p>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-name">Professional</div>
+                    <div class="plan-price">$56.99<span>/month</span></div>
+                    <p>Ideal for serious investors</p>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-name">Premium</div>
+                    <div class="plan-price">$649.99<span>/year</span></div>
+                    <p>Maximum benefits & savings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Uganda Gold</h3>
+                    <p>Premium gold trading and investment platform connecting global investors with Uganda's finest gold resources.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Investment Plans</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Email: info@ugandagold.com</li>
+                        <li>Phone: +256 123 456 789</li>
+                        <li>Address: Kampala, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Uganda Gold. All rights reserved. | Terms of Service | Privacy Policy
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

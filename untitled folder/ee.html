@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uganda's $12 Trillion Gold Opportunity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Gold gradient text */
+    .gold-text {
+      background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 1rem;
+    }
+
+    /* Blurred edges for main hero image - Updated for all edges */
+    .blurred-edges {
+      /* Create a mask that fades from center to edges */
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+
+    /* Soft background images */
+    .bg-image {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      opacity: 0.25;
+      filter: blur(6px);
+      z-index: -1;
+    }
+    
+    /* Gold background for hero section */
+    .gold-bg {
+      background-image: url('https://images.unsplash.com/photo-1581259421424-8f4b48865e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      color: white;
+      position: relative;
+    }
+    
+    /* Overlay for better text readability */
+    .text-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body class="text-gray-900 bg-white relative overflow-hidden">
+
+  <!-- Navigation -->
+  <nav class="glass fixed w-full z-10 px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold gold-text">Uganda Gold</h1>
+    <ul class="flex space-x-6 text-lg font-medium">
+      <li><a href="#" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Opportunities</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Licenses</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Gold Background -->
+  <section class="gold-bg">
+    <div class="grid lg:grid-cols-2 gap-12 items-center relative">
+
+      <!-- Left Content with Text Overlay -->
+      <div class="text-overlay">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-6 gold-text">
+          Uganda's $12 Trillion Gold Opportunity
+        </h2>
+        <p class="text-xl md:text-2xl leading-relaxed mb-8">
+          31 million metric tonnes of high-grade gold reserves now available for 
+          strategic investment through mining licenses, joint ventures, and 
+          value-addition partnerships.
+        </p>
+        <div class="flex gap-4">
+          <a href="#explore" class="px-8 py-4 bg-yellow-500 text-black text-lg font-semibold rounded-2xl shadow-lg hover:bg-yellow-400 transition">
+            Explore Opportunities
+          </a>
+          <a href="#video" class="px-8 py-4 bg-black text-white text-lg font-semibold rounded-2xl shadow-lg hover:bg-gray-800 transition">
+            Watch Video
+          </a>
+        </div>
+
+        <!-- Glass Info Card -->
+        <div class="glass p-6 mt-10 inline-block">
+          <h3 class="text-xl font-semibold gold-text">High-Grade Reserves</h3>
+          <p class="text-gray-100 mt-2 max-w-sm">
+            Uganda’s gold deposits rank among the world’s richest, presenting 
+            investors with unmatched value opportunities.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+        <img src="images/aa.png" alt="Uganda Gold" class="w-full blurred-edges">
+        <!-- Floating Glass Card -->
+        <div class="glass absolute top-6 right-6 p-4">
+          <p class="text-yellow-400 font-bold text-lg">31M Tonnes</p>
+          <p class="text-gray-200">Gold Reserves</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

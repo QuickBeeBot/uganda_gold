@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uganda's $12 Trillion Gold Opportunity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Gold gradient text */
+    .gold-text {
+      background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 1rem;
+    }
+
+    /* Blurred edges for main hero image */
+    .blurred-edges {
+      mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+
+    /* Soft background images */
+    .bg-image {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      opacity: 0.25;
+      filter: blur(6px);
+      z-index: -1;
+    }
+    
+    /* Hero Section with Subtle Background and Slideshow */
+    .hero-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Semi-transparent overlay for better text readability */
+    .text-overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: white;
+    }
+    
+    /* Slideshow container */
+    .slideshow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+    /* Individual slide styles */
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    /* Active slide */
+    .slide.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="text-gray-900 bg-white relative overflow-hidden">
+
+  <!-- Navigation -->
+  <nav class="glass fixed w-full z-10 px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold gold-text">Uganda Gold</h1>
+    <ul class="flex space-x-6 text-lg font-medium">
+      <li><a href="#" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Opportunities</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Licenses</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Slideshow -->
+  <section class="hero-container">
+    <!-- Slideshow -->
+    <div class="slideshow" id="slideshow">
+      <!-- Slide 1 -->
+      <div class="slide active" style="background-image: url('https://static.toiimg.com/thumb/msid-121310184,width-1280,height-720,resizemode-4/121310184.jpg');"></div>
+      <!-- Slide 2 -->
+      <div class="slide" style="background-image: url('https://www.investopedia.com/thmb/QM_UAaiMHE08x1ZitgiSp9KfywE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1015904752-ddee9a2d24fc480dad8e78022f6e9952.jpg');"></div>
+      <!-- Slide 3 -->
+      <div class="slide" style="background-image: url('https://images.hl.uk/vvl3z0p6qtad/6JFD5EUO0ZM17vtqdqcF77/9444d4f450ad0d5a28c4da87e1155ea8/Gold_nuggets_sitting_on_a_rock_floor.jpg?w=3840');"></div>
+    </div>
+
+    <!-- Content Overlay -->
+    <div class="text-overlay">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6 gold-text">
+        Uganda's $12 Trillion Gold Opportunity
+      </h2>
+      <p class="text-xl md:text-2xl leading-relaxed mb-8">
+        31 million metric tonnes of high-grade gold reserves now available for 
+        strategic investment through mining licenses, joint ventures, and 
+        value-addition partnerships.
+      </p>
+      <div class="flex gap-4">
+        <a href="#explore" class="px-8 py-4 bg-yellow-500 text-black text-lg font-semibold rounded-2xl shadow-lg hover:bg-yellow-400 transition">
+          Explore Opportunities
+        </a>
+        <a href="#video" class="px-8 py-4 bg-black text-white text-lg font-semibold rounded-2xl shadow-lg hover:bg-gray-800 transition">
+          Watch Video
+        </a>
+      </div>
+
+      <!-- Glass Info Card -->
+      <div class="glass p-6 mt-10 inline-block">
+        <h3 class="text-xl font-semibold gold-text">High-Grade Reserves</h3>
+        <p class="text-gray-100 mt-2 max-w-sm">
+          Uganda’s gold deposits rank among the world’s richest, presenting 
+          investors with unmatched value opportunities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="relative ml-auto">
+      <img src="images/aa.png" alt="Uganda Gold" class="w-full blurred-edges">
+      <!-- Floating Glass Card -->
+      <div class="glass absolute top-6 right-6 p-4">
+        <p class="text-yellow-400 font-bold text-lg">31M Tonnes</p>
+        <p class="text-gray-200">Gold Reserves</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for Slideshow -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slideshow = document.getElementById('slideshow');
+      const slides = slideshow.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      // Function to show a specific slide
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+      }
+
+      // Function to go to the next slide
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      // Change slide every 5 seconds
+      setInterval(nextSlide, 5000);
+
+      // Show the first slide initially
+      showSlide(currentSlide);
+    });
+  </script>
+
+</body>
+</html>

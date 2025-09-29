@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uganda's $12 Trillion Gold Opportunity | Official Investment Portal</title>
+  <meta name="description" content="Exclusive access to Uganda's historic 31M metric tonne gold discovery. Explore mining licenses, JV partnerships, and refining opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Gold Price Ticker -->
+  <div class="ticker">
+    <div class="ticker-content">
+      <span>LIVE GOLD PRICE: </span>
+      <span id="gold-price">$2,340.50/oz</span>
+      <span class="change" id="gold-change">+1.2%</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container wrap">
+      <a class="brand" href="#top" aria-label="Uganda Gold Home">
+        <span aria-hidden="true" class="brand-badge">UG</span>
+        <h1>UGANDA GOLD</h1>
+      </a>
+      <nav class="navlinks" id="navLinks">
+        <a href="#about">The Opportunity</a>
+        <a href="#stats">By The Numbers</a>
+        <a href="#opportunities">Investment Paths</a>
+        <a href="#regions">Mining Regions</a>
+        <a href="#testimonials">Success Stories</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero" id="top">
+    <video autoplay muted loop class="hero-bg">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-gold-coin-rotating-in-the-light-2404-large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Uganda's $12 Trillion Gold Opportunity</h1>
+      <p>31 million metric tonnes of high-grade gold reserves now available for strategic investment through mining licenses, joint ventures, and value-addition partnerships.</p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#opportunities" class="btn">Explore Opportunities</a>
+        <a href="#contact" class="btn outline">Contact Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">Africa's Next Gold Frontier</h2>
+    <p class="section-subtitle">Uganda's historic gold discovery represents one of the largest untapped mineral wealth opportunities in the 21st century, with government-backed investment frameworks and streamlined licensing processes.</p>
+    
+    <div class="stats-grid" id="stats">
+      <div class="stat-card">
+        <div class="stat-number">31M</div>
+        <div class="stat-label">Metric Tonnes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$12T</div>
+        <div class="stat-label">Estimated Value</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100K+</div>
+        <div class="stat-label">Future Jobs</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">24</div>
+        <div class="stat-label">Mining Licenses Available</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opportunities Section -->
+  <section id="opportunities" style="background: var(--gold-100);">
+    <div class="container">
+      <h2 class="section-title">Investment Pathways</h2>
+      <p class="section-subtitle">Multiple entry points for investors across the gold value chain, from exploration to refining and export.</p>
+      
+      <div class="opportunities-grid">
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gold mining site">
+          </div>
+          <div class="card-content">
+            <span class="card-badge">Licensing</span>
+            <h3>Mining Concessions</h3>
+            <p>Secure exclusive rights to explore and develop gold reserves across Uganda's most promising regions.</p>
+            <a href="#contact" class="btn white" style="width: 100%; text-align: center; justify-content: center;">Inquire Now</a>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1582560481030-9cb753ff6e33?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gold refining">
+          </div>
+          <div class="card-content">
+            <span class="card-badge">Partnership</span>
+            <h3>Joint Ventures</h3>
+            <p>Collaborate with established local operators through equity partnerships and profit-sharing models.</p>
+            <a href="#contact" class="btn white" style="width: 100%; text-align: center; justify-content: center;">Inquire Now</a>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1584986518187-7a97ab5d91ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mining equipment">
+          </div>
+          <div class="card-content">
+            <span class="card-badge">Supply Chain</span>
+            <h3>Equipment & Services</h3>
+            <p>Provide essential mining machinery, technology, and support services to active operations.</p>
+            <a href="#contact" class="btn white" style="width: 100%; text-align: center; justify-content: center;">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Mining Regions Section -->
+  <section id="regions" style="background: white;">
+    <div class="container">
+      <h2 class="section-title">Key Mining Regions</h2>
+      <p class="section-subtitle">Uganda's gold deposits are concentrated in these high-potential regions, each offering unique geological advantages.</p>
+      
+      <div class="opportunities-grid">
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karamoja landscape">
+          </div>
+          <div class="card-content">
+            <h3>Karamoja Region</h3>
+            <p>Northeastern frontier with extensive alluvial deposits and estimated 14M metric tonnes of reserves. Ideal for large-scale open-pit operations.</p>
+            <div class="card-badge">Primary Zone</div>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mubende mines">
+          </div>
+          <div class="card-content">
+            <h3>Mubende District</h3>
+            <p>Historic gold mining area with proven high-grade veins (avg. 18g/ton). Existing infrastructure supports immediate production.</p>
+            <div class="card-badge">Active Mining</div>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Busia gold">
+          </div>
+          <div class="card-content">
+            <h3>Busia Corridor</h3>
+            <p>Border region with Kenya showing exceptional purity levels (22-24K). Artisanal mining heritage now transitioning to industrial operations.</p>
+            <div class="card-badge">High Purity</div>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Buhweju hills">
+          </div>
+          <div class="card-content">
+            <h3>Buhweju District</h3>
+            <p>Western Uganda's gold heartland with reef deposits at shallow depths (50-150m). 8 active licenses available for joint ventures.</p>
+            <div class="card-badge">Reef Deposits</div>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kassanda terrain">
+          </div>
+          <div class="card-content">
+            <h3>Kassanda Belt</h3>
+            <p>Emerging greenfield site with multi-ounce pockets detected. New geophysical data reveals untapped potential.</p>
+            <div class="card-badge">Greenfield</div>
+          </div>
+        </div>
+        
+        <div class="opportunity-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Western Uganda">
+          </div>
+          <div class="card-content">
+            <h3>Western Uganda</h3>
+            <p>Volcanic belt with complex mineralization. Requires advanced extraction tech but offers exceptional long-term yields.</p>
+            <div class="card-badge">High-Tech</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Investor Success Stories</h2>
+      <p class="section-subtitle">Global mining leaders share their experiences developing Uganda's gold sector.</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Our Ugandan gold operations have exceeded expectations with 28% ROI in the first year. The regulatory framework is transparent and efficient."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+            </div>
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Golden Horizon Investments</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Uganda's mining sector offers the perfect balance of resource potential and investment security. Our joint venture has been seamless."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+            </div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>African Resources Fund</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The scale of Uganda's gold reserves is unmatched in Africa. We've tripled our initial investment and are expanding operations."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="James Wilson">
+            </div>
+            <div class="author-info">
+              <h4>James Wilson</h4>
+              <p>Global Mining Ventures</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "As a local entrepreneur, I've seen firsthand how gold investments are transforming communities while delivering strong returns."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina Nalwoga">
+            </div>
+            <div class="author-info">
+              <h4>Amina Nalwoga</h4>
+              <p>Uganda Mineral Partners</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The government's commitment to infrastructure development makes Uganda our top choice for African gold investments."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="David Müller">
+            </div>
+            <div class="author-info">
+              <h4>David Müller</h4>
+              <p>European Mineral Group</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "After evaluating multiple African markets, Uganda stood out for its geological potential and investor-friendly policies."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Lisa Zhang">
+            </div>
+            <div class="author-info">
+              <h4>Lisa Zhang</h4>
+              <p>Asia Mining Consortium</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment Form -->
+  <section id="investment">
+    <div class="container">
+      <h2 class="section-title">Express Investment Interest</h2>
+      <p class="section-subtitle">Complete this form to receive our detailed investment prospectus and schedule a consultation with our mining experts.</p>
+      
+      <div class="investment-form">
+        <form id="investForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="company">Company/Organization</label>
+              <input type="text" id="company">
+            </div>
+            <div class="form-group">
+              <label for="country">Country of Origin</label>
+              <input type="text" id="country">
+            </div>
+            <div class="form-group">
+              <label for="investmentType">Primary Interest</label>
+              <select id="investmentType" required>
+                <option value="">Select investment type</option>
+                <option>Mining License</option>
+                <option>Joint Venture</option>
+                <option>Equipment Supply</option>
+                <option>Refining Operations</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="investmentAmount">Investment Budget (USD)</label>
+              <select id="investmentAmount">
+                <option value="">Select range</option>
+                <option>$1M - $5M</option>
+                <option>$5M - $20M</option>
+                <option>$20M - $100M</option>
+                <option>$100M+</option>
+              </select>
+            </div>
+            <div class="form-group" style="grid-column: span 2;">
+              <label for="message">Investment Objectives</label>
+              <textarea id="message" placeholder="Tell us about your investment goals, timeline, and any specific requirements..."></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn">Submit Investment Interest</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Uganda Gold Authority</h2>
+      <p class="section-subtitle">Our investment team is ready to provide detailed information and facilitate your entry into Uganda's gold sector.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Investment Headquarters</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>Ministry of Energy & Mineral Development<br>Amber House, Kampala, Uganda</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>investments@golduganda.ug</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>+256 414 234 567</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <div class="investment-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">UGANDA <span>GOLD</span></div>
+          <p>Official investment portal for Uganda's historic gold discovery, facilitating ethical and sustainable development of 31 million metric tonnes of gold reserves.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Investor Resources</h4>
+          <ul>
+            <li><a href="#">Mining Act 2023</a></li>
+            <li><a href="#">Investment Guide</a></li>
+            <li><a href="#">Geological Reports</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">The Opportunity</a></li>
+            <li><a href="#opportunities">Investment Paths</a></li>
+            <li><a href="#regions">Mining Regions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        © <span id="year"></span> Uganda Gold Development Authority. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

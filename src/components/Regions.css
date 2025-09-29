@@ -1,0 +1,118 @@
+/* src/components/Regions.css */
+
+.regions-section {
+  padding: 7rem 0;
+  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.regions-header {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #cccccc;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid: 3 columns on desktop, centered */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.region-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(200, 160, 70, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 360px;
+}
+
+.region-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.region-image {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a; /* Fallback if image fails */
+}
+
+.region-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  color: #333;
+  z-index: 1;
+}
+
+.region-badge.primary { background: #ffd700; }
+.region-badge.active { background: #ffcc00; }
+.region-badge.purity { background: #f9d71c; }
+.region-badge.reef { background: #ff9933; }
+.region-badge.green { background: #4caf50; color: white; }
+.region-badge.tech { background: #2196f3; color: white; }
+
+.region-content {
+  padding: 1.5rem;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.region-content h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.region-content p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}

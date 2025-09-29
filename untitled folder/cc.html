@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uganda's $12 Trillion Gold Opportunity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Gold gradient text */
+    .gold-text {
+      background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Blur mask effect for image edges */
+    .blurred-edges {
+      mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+  </style>
+</head>
+<body class="text-gray-900 bg-white">
+
+  <!-- Navigation -->
+  <nav class="glass fixed w-full z-10 px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold gold-text">Uganda Gold</h1>
+    <ul class="flex space-x-6 text-lg font-medium">
+      <li><a href="#" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Opportunities</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Licenses</a></li>
+      <li><a href="#" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 px-6 md:px-16 lg:px-24">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Content -->
+      <div>
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-6 gold-text">
+          Uganda's $12 Trillion Gold Opportunity
+        </h2>
+        <p class="text-xl md:text-2xl leading-relaxed text-gray-700 mb-8">
+          31 million metric tonnes of high-grade gold reserves now available for 
+          strategic investment through mining licenses, joint ventures, and 
+          value-addition partnerships.
+        </p>
+        <div class="flex gap-4">
+          <a href="#explore" class="px-8 py-4 bg-yellow-500 text-black text-lg font-semibold rounded-2xl shadow-lg hover:bg-yellow-400 transition">
+            Explore Opportunities
+          </a>
+          <a href="#video" class="px-8 py-4 bg-black text-white text-lg font-semibold rounded-2xl shadow-lg hover:bg-gray-800 transition">
+            Watch Video
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+        <img src="images/hero.jpg" alt="Uganda Gold" class="w-full blurred-edges">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
