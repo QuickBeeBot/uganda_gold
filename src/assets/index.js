@@ -38,8 +38,12 @@ import uganda from "./uganda.png";
 import ug1 from "./ug01.webp";
 import ug2 from "./ug.png";
 import ug3 from "./ug-07.png";
+import ug_districts from "./ug_districts.png";
+import ug_districts2 from "./ug_districts2.png";
 
 export {
+  ug_districts2,
+  ug_districts,
   ug1,
   ug2,
   ug3,
