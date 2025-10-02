@@ -13,8 +13,12 @@ import Regions from './Regions'
 import Equipment from './Equipment'
 import Contact from './Contact'
 import InvestmentForm from './InvestmentForm'
+import Areas from './Areas'
+import MiningAreasSection from './MiningAreasSection'
 
 export {
+    MiningAreasSection,
+    Areas,
     Billing,
     Regions,
     InvestmentForm,

@@ -33,8 +33,18 @@ import reg3 from "./a_k3.jpeg";
 import reg4 from "./a_k4.jpeg";
 import reg5 from "./a_k5.jpeg";
 import reg6 from "./a_k1.jpeg";
+import Ankole from "./Ankole.png";
+import uganda from "./uganda.png";
+import ug1 from "./ug01.webp";
+import ug2 from "./ug.png";
+import ug3 from "./ug-07.png";
 
 export {
+  ug1,
+  ug2,
+  ug3,
+  uganda,
+  Ankole,
   airbnb,
   joint,
   bill,

@@ -2,8 +2,10 @@ import React from 'react'
 import { 
   Billing, 
   Business, 
+  Areas,
   CardDeal, 
   Clients, 
+  MiningAreasSection,
   CTA, 
   Footer, 
   Hero, 
@@ -33,6 +35,8 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats/>
+          <Areas/>
+          <MiningAreasSection/>
           <Business/>
           <Billing/>
           <CardDeal/>

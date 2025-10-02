@@ -1,0 +1,254 @@
+/* MiningAreasSection.css */
+.mining-areas-section {
+  /* background: linear-gradient(135deg, #0a0a14 0%, #121220 100%); */
+  color: #ffffff;
+  padding: 60px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ffffff, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #d4af37;
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.mining-areas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mining-areas-list li {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.gold-dot {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: #d4af37;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.map-placeholder {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 1px solid #e0e0e0;
+}
+
+.map-title {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  z-index: 10;
+}
+
+.map-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+.marker-pin {
+  width: 24px;
+  height: 24px;
+  background: #d4af37;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.marker-pin::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+}
+
+.marker-label {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(212, 175, 55, 0.9);
+  color: #1a1a2e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  background: #d4af37;
+  border-radius: 4px;
+}
+
+.legend-color.copper {
+  background: #b87333;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .map-wrapper {
+    max-width: 100%;
+    height: 400px;
+  }
+  
+  .marker-label {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mining-areas-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+  }
+  
+  .map-wrapper {
+    height: 350px;
+  }
+}
