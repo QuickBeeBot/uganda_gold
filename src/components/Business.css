@@ -1,0 +1,35 @@
+/* Gold Icon Circle with Glow */
+.gold-icon-circle {
+  background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Gold Icon Color (for PNGs) */
+.gold-icon {
+  filter: hue-rotate(45deg) saturate(180%) brightness(1.2);
+}
+
+/* Optional: Hover effect */
+.feature-card:hover .gold-icon-circle {
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.6);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.5);
+}

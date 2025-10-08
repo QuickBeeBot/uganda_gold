@@ -39,7 +39,7 @@ import ug1 from "./ug01.webp";
 import ug2 from "./ug.png";
 import ug3 from "./ug-07.png";
 import ug_districts from "./ug_districts.png";
-import ug_districts2 from "./ug_districts2.png";
+import ug_districts2 from "./ug_m_districts.png";
 import ugandaCoat from "./ugandaCoat.png";
 
 export {

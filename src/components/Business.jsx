@@ -1,15 +1,25 @@
-import React from 'react'
-import { features } from '../constants'
-import styles, { layout } from '../style'
-import Button from './Button'
+import './Business.css';
+
+// src/components/Business.jsx
+import React from 'react';
+import { features } from '../constants';
+import styles, { layout } from '../style';
+
+// Simple Gold Button Component (no external dependency)
+const GoldButton = ({ children = "Get Started", onClick }) => (
+  <button className="btn-gold" onClick={onClick}>
+    {children}
+  </button>
+);
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
+    {/* ✅ Gold icon container */}
+    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} gold-gradient`}>
       <img
         src={icon}
-        alt='icon'
-        className='w-[50%] h-[50%] object-contain'
+        alt='feature icon'
+        className='w-[50%] h-[50%] object-contain filter brightness-0 invert' // makes dark icons white
       />
     </div>
     <div className='flex-1 flex flex-col ml-3'>
@@ -21,25 +31,30 @@ const FeatureCard = ({ icon, title, content, index }) => (
       </p>
     </div>
   </div>
-)
+);
 
 const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>The Largest Gold <br className='sm:block hidden'/>Discovery of the Century</h2>
+        <h2 className={styles.heading2}>
+          The Largest Gold <br className='sm:block hidden' /> Discovery of the Century
+        </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Uganda's historic gold discovery represents one of the largest untapped mineral wealth opportunities in the 21st century, with government-backed investment frameworks and streamlined licensing processes.
         </p>
-        <Button styles='mt-10'/>
+        {/* ✅ Gold Button */}
+        <div className='mt-10'>
+          <GoldButton />
+        </div>
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (
-          <FeatureCard key={feature.id} {...feature} index={index}/>
+          <FeatureCard key={feature.id} {...feature} index={index} />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Business
+export default Business;
