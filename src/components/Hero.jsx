@@ -1,5 +1,6 @@
 import styles from '../style'
 import { discount, m7, ugandaCoat } from '../assets' // ✅ Add coat of arms here
+import './Hero.css';
 
 const Hero = () => {
   return (
@@ -23,11 +24,13 @@ const Hero = () => {
           </h1>
           {/* ✅ Replace GetStarted with Coat of Arms */}
           <div className='ss:flex hidden md:mr-4 mr-0'>
-            <img
-              src={ugandaCoat}
-              alt='Uganda Coat of Arms'
-              className='w-[100px] h-[100px] object-contain' // Adjust size as needed
-            />
+            <div className="coat-of-arms-wrapper">
+              <img
+                src={ugandaCoat}
+                alt='Uganda Coat of Arms'
+                className='coat-of-arms-image'
+              />
+            </div>
           </div>
         </div>
         <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full'>
