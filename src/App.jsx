@@ -14,6 +14,7 @@ import {
   Regions, 
   Equipment,
   InvestmentForm,
+  Contacts,
   Contact,
   Testimonials 
 } from './components'
@@ -41,9 +42,10 @@ const App = () => {
           <Billing/>
           <CardDeal/>
           <Equipment/>
-          <Regions/>
+          {/* <Regions/> */}
           <InvestmentForm/>
-          <Contact/>
+          <Contacts/>
+          {/* <Contact/> */}
           {/* <Testimonials/> */}
           {/* <Clients/> */}
           {/* <CTA/> */}

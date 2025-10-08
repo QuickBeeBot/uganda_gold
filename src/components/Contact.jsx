@@ -20,6 +20,8 @@ const Contact = () => {
           <div className="contact-info">
             {/* Office Location */}
             <div className="contact-card">
+              {/* 👇 Add this line right at the top */}
+              <div className="uganda-flag-stripe"></div>
               <div className="card-icon gold-bg-light">
                 <i className="fas fa-map-marker-alt"></i>
               </div>

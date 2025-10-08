@@ -1,0 +1,161 @@
+/* src/components/Contact.css */
+
+.contact-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header */
+.contact-header {
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.contact-header .section-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contact-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Contact Info Cards Container */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual Card */
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(200, 160, 70, 0.25);
+  border-radius: 20px;
+  padding: 1.8rem;
+  width: 100%;
+  max-width: 350px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(200, 160, 70, 0.5);
+  transform: translateY(-4px);
+}
+
+/* Uganda Flag Stripe (Top) */
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(to bottom,
+    #000000 0%,
+    #000000 33.33%,
+    #FCDD09 33.33%,
+    #FCDD09 66.66%,
+    #D90000 66.66%,
+    #D90000 100%
+  );
+  transition: left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 2;
+}
+
+.contact-card:hover::before {
+  left: 0;
+}
+
+/* Card Icon */
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+  background: rgba(200, 160, 70, 0.15);
+}
+
+.card-icon i {
+  font-size: 1.3rem;
+  color: #d4af37;
+}
+
+.contact-card h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 0 1rem;
+}
+
+.contact-card p {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.contact-card a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-card a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.working-hours {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(200, 160, 70, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .contact-header .section-heading {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    gap: 2rem;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}

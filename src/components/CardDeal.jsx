@@ -20,7 +20,7 @@ const CardDeal = () => {
         <img
           src={joint}
           alt='card'
-          className='w-[100%] h-[100%]'
+          className='w-[80%] h-[80%]'
         />
       </div>
     </section>

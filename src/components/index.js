@@ -11,6 +11,7 @@ import Stats from './Stats'
 import Testimonials from './Testimonials'
 import Regions from './Regions'
 import Equipment from './Equipment'
+import Contacts from './cont'
 import Contact from './Contact'
 import InvestmentForm from './InvestmentForm'
 import Areas from './Areas'
@@ -22,6 +23,7 @@ export {
     Billing,
     Regions,
     InvestmentForm,
+    Contacts,
     Contact,
     Equipment,
     Business,
