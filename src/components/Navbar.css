@@ -1,0 +1,17 @@
+/* Uganda National Flag Stripe — Horizontal Bands */
+.uganda-flag-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px; /* Thin bar */
+  background: linear-gradient(to bottom,
+    #000000 0%,      /* Black */
+    #000000 33.33%,
+    #FCDD09 33.33%,  /* Yellow (official Uganda gold-yellow) */
+    #FCDD09 66.66%,
+    #D90000 66.66%,  /* Red */
+    #D90000 100%
+  );
+  z-index: 10;
+}
