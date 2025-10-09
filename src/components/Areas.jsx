@@ -35,7 +35,7 @@ const Areas = () => {
         <img
           src={ug_districts2}
           alt='card'
-          className='w-[100%] h-[100%]'
+          className='w-[70%] h-[90%]'
         />
       </div>
     </section>

@@ -1,0 +1,30 @@
+/* src/components/LiveGoldPrice.css */
+
+.live-gold-price {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.price-text {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.change {
+  margin-left: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.change.green {
+  color: #4ade80; /* Tailwind green-400 */
+}
+
+.change.red {
+  color: #f87171; /* Tailwind red-400 */
+}

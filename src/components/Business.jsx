@@ -45,7 +45,7 @@ const Business = () => {
         </p>
         {/* ✅ Gold Button */}
         <div className='mt-10'>
-          {/* <GoldButton /> */}
+          <GoldButton />
         </div>
       </div>
       <div className={`${layout.sectionImg} flex-col`}>

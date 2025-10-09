@@ -17,9 +17,11 @@ import InvestmentForm from './InvestmentForm'
 import Areas from './Areas'
 import MiningAreasSection from './MiningAreasSection'
 import Discovery from './Discovery'
+import LiveGoldPrice from './LiveGoldPrice'
 
 export {
     Discovery,
+    LiveGoldPrice,
     MiningAreasSection,
     Areas,
     Billing,
