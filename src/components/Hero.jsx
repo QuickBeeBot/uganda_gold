@@ -23,7 +23,7 @@ const Hero = () => {
             <span className='text-gradient'>$12 Trillion</span> {" "}
           </h1>
           {/* ✅ Replace GetStarted with Coat of Arms */}
-          <div className='ss:flex hidden md:mr-4 mr-0'>
+          {/* <div className='ss:flex hidden md:mr-4 mr-0'>
             <div className="coat-of-arms-wrapper">
               <img
                 src={ugandaCoat}
@@ -31,7 +31,7 @@ const Hero = () => {
                 className='coat-of-arms-image'
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full'>
           Gold Frontier

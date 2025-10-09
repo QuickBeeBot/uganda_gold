@@ -33,10 +33,6 @@ export const navLinks = [
     title: "Mining Regions",
   },
   {
-    id: "stories",
-    title: "Success Stories",
-  },
-  {
     id: "contact",
     title: "Contact",
   },  
