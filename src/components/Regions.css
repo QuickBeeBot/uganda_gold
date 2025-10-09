@@ -68,7 +68,7 @@
 
 .region-image {
   position: relative;
-  height: 200px;
+  height: 170px;
   background-size: cover;
   background-position: center;
   background-color: #1a1a1a; /* Fallback if image fails */
