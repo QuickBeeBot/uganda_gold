@@ -16,6 +16,7 @@ import {
   InvestmentForm,
   Contacts,
   Contact,
+  Discovery,
   Testimonials 
 } from './components'
 import styles from './style'
@@ -39,9 +40,10 @@ const App = () => {
           <Areas/>
           {/* <MiningAreasSection/> */}
           <Business/>
-          <Billing/>
-          <CardDeal/>
-          <Equipment/>
+          <Discovery/>
+          {/* <Billing/> */}
+          {/* <CardDeal/> */}
+          {/* <Equipment/> */}
           {/* <Regions/> */}
           <InvestmentForm/>
           <Contacts/>

@@ -16,8 +16,10 @@ import Contact from './Contact'
 import InvestmentForm from './InvestmentForm'
 import Areas from './Areas'
 import MiningAreasSection from './MiningAreasSection'
+import Discovery from './Discovery'
 
 export {
+    Discovery,
     MiningAreasSection,
     Areas,
     Billing,
