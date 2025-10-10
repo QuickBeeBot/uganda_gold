@@ -112,67 +112,95 @@ export const stats = [
   },
 ];
 
+
+
+
+
+
+
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Investor Resources",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Mining Act 2024",
+        link: "#",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Investment Prospectus",
+        link: "#",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Geological Survey Data",
+        link: "#",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "Tax Incentive Guide",
+        link: "#",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "FAQ & Support",
+        link: "#",
       },
     ],
   },
+  
+
+
+
+
   {
-    title: "Community",
+    title: "Quick Navigation",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Discovery & Scale",
+        link: "#",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Investment Pathways",
+        link: "#",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Mining Regions",
+        link: "#",
       },
       {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        name: "Investor Testimonials",
+        link: "#",
       },
       {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "Contact Authority",
+        link: "#",
       },
     ],
   },
+  
+
+
+
+
   {
-    title: "Partner",
+    title: "Legal & Compliance",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Terms of Engagement",
+        link: "#",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Privacy Policy",
+        link: "#",
+      },
+      {
+        name: "Anti-Bribery Policy",
+        link: "#",
+      },
+      {
+        name: "ESG Framework",
+        link: "#",
+      },
+      {
+        name: "Regulatory Disclosures",
+        link: "#",
       },
     ],
   },

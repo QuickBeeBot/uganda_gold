@@ -1,5 +1,5 @@
 import React from 'react'
-import { ug_districts2, ug2, ug3, uganda, Ankole, joint } from '../assets'
+import { ug_districts2, ug2, ug3, uganda, gold_areas, joint } from '../assets'
 import Button from './Button'
 import './MiningAreasSection.css';
 import styles, { layout } from '../style'
@@ -33,9 +33,9 @@ const Areas = () => {
       </div>
       <div className={layout.sectionImg}>
         <img
-          src={ug_districts2}
+          src={gold_areas}
           alt='card'
-          className='w-[70%] h-[90%]'
+          className='w-[80%] h-[100%]'
         />
       </div>
     </section>
