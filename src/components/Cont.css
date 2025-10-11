@@ -1,8 +1,9 @@
+
+
 /* src/components/Contact.css */
 
 .contact-section {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
   color: white;
 }
 
@@ -105,13 +106,13 @@
 
 .card-icon i {
   font-size: 1.3rem;
-  color: #d4af37;
+  color: #72a2b1;
 }
 
 .contact-card h4 {
   font-weight: 700;
   font-size: 1.2rem;
-  color: white;
+  color: #72a2b1;
   margin: 0 0 1rem;
 }
 
@@ -123,14 +124,14 @@
 }
 
 .contact-card a {
-  color: #d4af37;
+  color: #72a2b1;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
 
 .contact-card a:hover {
-  color: #ffd700;
+  color: #72a2b1;
   text-decoration: underline;
 }
 

@@ -21,9 +21,10 @@ const Contacts = () => {
           {/* Office Location */}
           <div className="contact-card">
             <div className="card-icon">
-              <i className="fas fa-map-marker-alt"></i>
+              <i className="fas fa-map-marker-alt"style={{ color: '#72a2b1' }} ></i>
             </div>
-            <h4>Office Location</h4>
+            <h4
+          style={{ color: '#72a2b1' }} >Office Location</h4>
             <p>
               Ministry of Energy & Mineral Development<br />
               Amber House, Plot 2-12 Apollo Kaggwa Road<br />
@@ -34,9 +35,10 @@ const Contacts = () => {
           {/* Email */}
           <div className="contact-card">
             <div className="card-icon">
-              <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope" style={{ color: '#72a2b1' }} ></i>
             </div>
-            <h4>Email Us</h4>
+            <h4
+          style={{ color: '#72a2b1' }} >Email Us</h4>
             <p>
               <a href="mailto:investments@golduganda.ug">investments@golduganda.ug</a>
               <br />
@@ -47,9 +49,10 @@ const Contacts = () => {
           {/* Phone */}
           <div className="contact-card">
             <div className="card-icon gold-bg-light">
-              <i className="fas fa-phone-alt"></i>
+              <i className="fas fa-phone-alt" style={{ color: '#72a2b1' }} ></i>
             </div>
-            <h4>Call Us</h4>
+            <h4
+          style={{ color: '#72a2b1' }} >Call Us</h4>
             <p>
               <strong>Office:</strong> <a href="tel:+256414234567">+256 414 234 567</a><br />
               <strong>24/7 Hotline:</strong> <a href="tel:+256700123456">+256 700 123 456</a>

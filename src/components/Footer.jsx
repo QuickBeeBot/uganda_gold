@@ -29,7 +29,7 @@ const Footer = () => {
         <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
           {footerLinks.map((link) => (
             <div key={link.title} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
-              <h4 className='font-poppins font-medium text-[18px] leading-[27px] text-white'>
+              <h4 className='font-poppins font-medium text-[18px] leading-[27px] text-white' style={{ color: '#72a2b1' }} >
                 {link.title}
               </h4>
               <ul className='list-none mt-4'>
