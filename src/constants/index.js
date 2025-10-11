@@ -21,15 +21,15 @@ export const navLinks = [
     title: "The Opportunity",
   },
   {
-    id: "features",
+    id: "Numbers",
     title: "By The Numbers",
   },
   {
-    id: "product",
+    id: "InvestmentPaths",
     title: "Investment Paths",
   },
   {
-    id: "clients",
+    id: "MiningAreas",
     title: "Mining Regions",
   },
   {
@@ -124,7 +124,7 @@ export const footerLinks = [
     links: [
       {
         name: "Mining Act 2024",
-        link: "#",
+        link: "/mining-act",
       },
       {
         name: "Investment Prospectus",
@@ -144,11 +144,6 @@ export const footerLinks = [
       },
     ],
   },
-  
-
-
-
-
   {
     title: "Quick Navigation",
     links: [
@@ -174,11 +169,6 @@ export const footerLinks = [
       },
     ],
   },
-  
-
-
-
-
   {
     title: "Legal & Compliance",
     links: [

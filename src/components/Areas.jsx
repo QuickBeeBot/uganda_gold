@@ -6,7 +6,7 @@ import styles, { layout } from '../style'
 
 const Areas = () => {
   return (
-    <section className={layout.section}>
+    <section  id='MiningAreas' className={layout.section}>
       <div className={layout.sectionInfo}>
         {/* <h2 className={styles.heading2}>Key Mining Areas <br className='sm:block hidden'/>in Uganda.</h2> */}
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

@@ -158,7 +158,7 @@
 /* Ensure consistent heading (avoid 'footer-heading' class) */
 .form-header .section-heading {
   font-family: 'Inter', sans-serif;
-  font-size: 2.2rem;
+  font-size: 3.0rem;
   color: white;
   margin-bottom: 1rem;
   font-weight: 700;

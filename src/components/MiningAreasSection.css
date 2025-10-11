@@ -25,10 +25,10 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 3.0rem;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #ffffff, #d4af37);
+  background: linear-gradient(to right, #72a2b1, #72a2b1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,7 +48,7 @@
 }
 
 .section-description {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 25px;
   color: #e0e0e0;
@@ -64,7 +64,7 @@
   margin-bottom: 15px;
   padding-left: 30px;
   position: relative;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -109,7 +109,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1a1a2e;
   background: rgba(255, 255, 255, 0.9);

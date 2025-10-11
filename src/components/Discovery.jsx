@@ -7,13 +7,6 @@ const Discovery = () => {
   return (
     <section id="regions" className="regions-section">
       <div className="container">
-        {/* <div className="regions-header">
-          <h2 className="section-title">Key Mining Regions</h2>
-          <p className="section-subtitle">
-            Uganda's gold deposits are concentrated in these high-potential regions, each
-            offering unique geological advantages.
-          </p>
-        </div> */}
 
         <div className="regions-grid">
           {/* Row 1 */}
@@ -78,7 +71,18 @@ const Discovery = () => {
             </div>
           </div>
 
-          {/* Row 2 */}
+          <div className="region-card">
+  <div className="region-image" style={{ backgroundImage: "url('images/a_k3.JPEG')" }}>
+    <img src={equipment} alt="Refinery operations" className="w-[100%] h-[100%] relative z-[5]" />
+    <span className="region-badge purity">High Purity</span>
+  </div>
+  <div className="region-content">
+    <h3>Mining Licenses & Refining</h3>
+    <p>
+      Invest in Uganda’s full gold value chain — from licensed mining to high-purity refining.
+    </p>
+  </div>
+</div>
             
         </div>
       </div>

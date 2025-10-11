@@ -21,6 +21,10 @@ import {
   Testimonials 
 } from './components'
 import styles from './style'
+// New Pages
+import MiningAct from './pages/MiningAct';
+// import Prospectus from './pages/Prospectus'; 
+// import FAQ from './pages/FAQ'; 
 
 const App = () => {
   return (

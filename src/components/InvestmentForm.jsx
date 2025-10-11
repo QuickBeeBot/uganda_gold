@@ -17,11 +17,13 @@ const InvestmentForm = () => {
   };
 
   return (
-    <section id="investment-form" className="investment-section">
+    <section id="InvestmentPaths" className="investment-section">
       <div className="container">
         {/* Always visible: Header & Description */}
         <div className="form-header">
-          <h2 className="section-heading">Express Investment Interest</h2>
+          <h2 className="section-heading"
+          style={{ color: '#FFD700' }} 
+          >Express Investment Interest</h2>
           <p>
             Complete this form to receive our detailed investment prospectus and schedule a consultation with our mining experts.
           </p>

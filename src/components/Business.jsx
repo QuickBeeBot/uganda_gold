@@ -1,11 +1,9 @@
-import './Business.css';
-
 // src/components/Business.jsx
 import React from 'react';
 import { features } from '../constants';
 import styles, { layout } from '../style';
+import './Business.css'; // Make sure this is imported
 
-// Simple Gold Button Component (no external dependency)
 const GoldButton = ({ children = "Get Started", onClick }) => (
   <button className="btn-gold" onClick={onClick}>
     {children}
@@ -14,12 +12,12 @@ const GoldButton = ({ children = "Get Started", onClick }) => (
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} feature-card`}>
-    {/* ✅ Gold icon container */}
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} gold-gradient`}>
+    {/* Icon container with custom icon color */}
+    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img
         src={icon}
         alt='feature icon'
-        className='w-[50%] h-[50%] object-contain filter brightness-0 invert' // makes dark icons white
+        className='w-[50%] h-[50%] object-contain feature-icon' // 👈 Custom class
       />
     </div>
     <div className='flex-1 flex flex-col ml-3'>
@@ -37,15 +35,18 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>
+        {/* ✅ Gold heading color #FFD700 */}
+        <h2 
+          className={styles.heading2}
+          style={{ color: '#FFD700' }} // 👈 Inline style for gold
+        >
           The Largest Gold <br className='sm:block hidden' /> Discovery of the Century
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Uganda's historic gold discovery represents one of the largest untapped mineral wealth opportunities in the 21st century, with government-backed investment frameworks and streamlined licensing processes.
         </p>
-        {/* ✅ Gold Button */}
         <div className='mt-10'>
-          <GoldButton />
+          {/* <GoldButton /> */}
         </div>
       </div>
       <div className={`${layout.sectionImg} flex-col`}>

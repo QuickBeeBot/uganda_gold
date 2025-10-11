@@ -8,7 +8,9 @@ const Contacts = () => {
       <div className="container">
         {/* Title & Description */}
         <div className="contact-header">
-          <h2 className="section-heading">Get In Touch</h2>
+          <h2 className="section-heading"
+          style={{ color: '#FFD700' }} 
+          >Get In Touch</h2>
           <p>
             Reach out to the Uganda Gold Development Authority for licensing, investment inquiries, or partnership opportunities.
           </p>
@@ -18,7 +20,7 @@ const Contacts = () => {
         <div className="contact-info">
           {/* Office Location */}
           <div className="contact-card">
-            <div className="card-icon gold-bg-light">
+            <div className="card-icon">
               <i className="fas fa-map-marker-alt"></i>
             </div>
             <h4>Office Location</h4>
@@ -31,7 +33,7 @@ const Contacts = () => {
 
           {/* Email */}
           <div className="contact-card">
-            <div className="card-icon gold-bg-light">
+            <div className="card-icon">
               <i className="fas fa-envelope"></i>
             </div>
             <h4>Email Us</h4>

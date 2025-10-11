@@ -1,19 +1,26 @@
 /* src/components/Regions.css */
 
 .regions-section {
-  padding: 7rem 0;
-  background: linear-gradient(135deg, #00040f 0%, #00040f 100%);
+  /* padding: 7rem 0; */
+  /* background: linear-gradient(135deg, #00040f 0%, #00040f 100%); */
   color: white;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem; /* Mobile padding */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+/* Reduce side padding on desktop for better space usage */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 .regions-header {
@@ -24,7 +31,7 @@
 .section-title {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
-  color: white;
+  color: #72a2b1;
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -37,14 +44,29 @@
   line-height: 1.7;
 }
 
-/* Grid: 3 columns on desktop, centered */
+/* Grid: 4 columns on desktop */
 .regions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
   width: 100%;
-  justify-content: center;
   margin-top: 2rem;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .regions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .regions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
 }
 
 .region-card {
@@ -58,7 +80,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 360px;
+  /* ✅ NO max-width — let grid control size */
 }
 
 .region-card:hover {
@@ -68,10 +90,10 @@
 
 .region-image {
   position: relative;
-  height: 170px;
+  height: 140px;
   background-size: cover;
   background-position: center;
-  background-color: #1a1a1a; /* Fallback if image fails */
+  background-color: #1a1a1a; /* Fallback */
 }
 
 .region-badge {
@@ -103,9 +125,10 @@
   justify-content: space-between;
 }
 
+/* ✅ Title color changed to #72a2b1 */
 .region-content h3 {
   font-size: 1.3rem;
-  color: white;
+  color: #72a2b1;
   margin-bottom: 0.8rem;
   font-weight: 600;
 }
