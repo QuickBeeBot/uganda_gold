@@ -11,7 +11,7 @@ const Footer = () => {
 
 
       {/* 🇺🇬 Uganda Flag Stripe — Top of Footer */}
-      <div className="uganda-flag-stripe">
+      <div className="bottom-uganda-flag-stripe">
         <div className="flag-band black"></div>
         <div className="flag-band yellow"></div>
         <div className="flag-band red"></div>
