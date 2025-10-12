@@ -42,8 +42,10 @@ import ug_districts from "./ug_districts.png";
 import ug_districts2 from "./ug_m_districts.png";
 import ugandaCoat from "./ugandaCoat.png";
 import gold_areas from "./gold_areas.png";
+import licenses from "./licenses.jpeg";
 
 export {
+  licenses,
   gold_areas,
   ugandaCoat,
   ug_districts2,

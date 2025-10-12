@@ -1,6 +1,6 @@
 // src/components/Regions.jsx
 import React from 'react';
-import { reg1, reg2, reg3, mining, joint, equipment } from '../assets'
+import { reg1, reg2, reg3, mining, joint, equipment, licenses } from '../assets'
 import './Regions.css';
 
 const Discovery = () => {
@@ -72,17 +72,17 @@ const Discovery = () => {
           </div>
 
           <div className="region-card">
-  <div className="region-image" style={{ backgroundImage: "url('images/a_k3.JPEG')" }}>
-    <img src={equipment} alt="Refinery operations" className="w-[100%] h-[100%] relative z-[5]" />
-    <span className="region-badge purity">High Purity</span>
-  </div>
-  <div className="region-content">
-    <h3>Mining Licenses & Refining</h3>
-    <p>
-      Invest in Uganda’s full gold value chain — from licensed mining to high-purity refining.
-    </p>
-  </div>
-</div>
+            <div className="region-image" style={{ backgroundImage: "url('images/a_k3.JPEG')" }}>
+              <img src={licenses} alt="Refinery operations" className="w-[100%] h-[100%] relative z-[5]" />
+              <span className="region-badge purity">High Purity</span>
+            </div>
+            <div className="region-content">
+              <h3>Mining Licenses & Refining</h3>
+              <p>
+                Invest in Uganda’s full gold value chain — from licensed mining to high-purity refining.
+              </p>
+            </div>
+          </div>
             
         </div>
       </div>
