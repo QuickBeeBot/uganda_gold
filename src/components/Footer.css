@@ -1,21 +1,19 @@
-.uganda-flag-vertical-badge {
+/* Uganda National Flag Stripe — Horizontal Bands */
+.uganda-flag-stripe {
   position: absolute;
-  top: -12px; /* Above footer content */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 45px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16px; /* Thin bar */
+  background: linear-gradient(to bottom,
+    #000000 0%,      /* Black */
+    #000000 33.33%,
+    #FCDD09 33.33%,  /* Yellow (official Uganda gold-yellow) */
+    #FCDD09 66.66%,
+    #D90000 66.66%,  /* Red */
+    #D90000 100%
+  );
+  z-index: 10;
 }
 
-.uganda-flag-vertical-badge .band {
-  flex: 1;
-}
 
-.uganda-flag-vertical-badge .band.black { background-color: #000000; }
-.uganda-flag-vertical-badge .band.yellow { background-color: #FCDD09; }
-.uganda-flag-vertical-badge .band.red { background-color: #D90000; }

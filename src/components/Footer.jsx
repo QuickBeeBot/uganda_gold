@@ -8,8 +8,10 @@ import './Footer.css';
 const Footer = () => {
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col relative`}>
+
+
       {/* 🇺🇬 Uganda Flag Stripe — Top of Footer */}
-      <div className="uganda-flag-vertical-stripe">
+      <div className="uganda-flag-stripe">
         <div className="flag-band black"></div>
         <div className="flag-band yellow"></div>
         <div className="flag-band red"></div>
@@ -47,30 +49,45 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
-        <p className='font-poppins font-normal text-center text-[18px] leading-[27px] text-white'>
-          © 2025 Uganda Gold Development Authority. All Rights Reserved.
-        </p>  
+      <div className='w-full pt-6 border-t-[1px] border-t-[#3F3E45]'>
+  {/* Mobile: centered stack */}
+  <div className='md:hidden flex flex-col items-center gap-4'>
+    <p className='font-poppins font-normal text-[18px] leading-[27px] text-white text-center'>
+      © 2025 Uganda Gold Development Authority. All Rights Reserved.
+    </p>
+    <div className='flex flex-row'>
+      {socialMedia.map((social, index) => (
+        <a key={social.id} href={social.url || '#'} target="_blank" rel="noopener noreferrer">
+          <img
+            src={social.icon}
+            alt={social.id}
+            className={`w-[21px] h-[21px] object-contain ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`}
+          />
+        </a>
+      ))}
+    </div>
+  </div>
 
-        {/* ✅ Uncomment to show social media */}
-        <div className='flex flex-row md:mt-0 mt-6'>
-          {socialMedia.map((social, index) => (
-            <a
-              key={social.id}
-              href={social.url || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <img
-                src={social.icon}
-                alt={social.id}
-                className={`w-[21px] h-[21px] object-contain ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`}
-              />
-            </a>
-          ))}
-        </div>
-      </div>
+  {/* Desktop: text centered, icons on right — using absolute or flex trick */}
+  <div className='hidden md:flex justify-center relative w-full'>
+    <p className='font-poppins font-normal text-[18px] leading-[27px] text-white text-center'>
+      © 2025 Uganda Gold Development Authority. All Rights Reserved.
+    </p>
+    <div className='absolute right-0 flex flex-row'>
+      {socialMedia.map((social, index) => (
+        <a key={social.id} href={social.url || '#'} target="_blank" rel="noopener noreferrer">
+          <img
+            src={social.icon}
+            alt={social.id}
+            className={`w-[21px] h-[21px] object-contain ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`}
+          />
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
+
     </section>
   );
 };
