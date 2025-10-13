@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
-import { close, logo, menu, ugandaCoat } from '../assets'; // ✅ Added import
+import { close, logo, menu, ugandaCoat } from '../assets';
 import { navLinks } from '../constants';
 import './Navbar.css';
 
@@ -8,60 +8,74 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar relative'>
-      {/* Logo */}
-      <img src={logo} alt='Uganda Gold Authority' className='w-[254px] h-[52px]' />
+    <nav className='w-full flex py-6 items-center navbar relative'>
+      {/* 🔲 Add padding here to create space on left/right */}
+      <div className='flex w-full px-6 sm:px-12 lg:px-20 justify-between items-center'>
+        {/* Left: Logo with space on left (via container padding) */}
+        <div className='flex items-center'>
+          <img 
+            src={logo} 
+            alt='Uganda Gold Authority' 
+            className='w-[254px] h-[52px]'
+          />
+        </div>
 
-      {/* Desktop Menu */}
-      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        {navLinks.map((nav, i) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              i === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-            } text-white`}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
-      </ul>
+        {/* Center: Desktop Nav Links */}
+        <ul className='list-none hidden sm:flex justify-center items-center flex-1'>
+          {navLinks.map((nav, i) => (
+            <li
+              key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                i === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+              } text-white`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
 
-      {/* Mobile Menu Button + Uganda Coat of Arms (right side) */}
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
-        <img
-          src={toggle ? close : menu}
-          alt='menu'
-          className='w-[28px] h-[28px] object-contain'
-          onClick={() => setToggle((prev) => !prev)}
-        />
-        <div
-          className={`${
-            toggle ? 'flex' : 'hidden'
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
-        >
-          <ul className='list-none flex flex-col justify-end items-center flex-1'>
-            {navLinks.map((nav, i) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  i === navLinks.length - 1 ? 'mb-0' : 'mb-4'
-                } text-white`}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
+        {/* Right: Mobile toggle + Uganda Coat of Arms */}
+        <div className='flex items-center'>
+          {/* Mobile menu button */}
+          <div className='sm:hidden flex items-center mr-4'>
+            <img
+              src={toggle ? close : menu}
+              alt='menu'
+              className='w-[28px] h-[28px] object-contain'
+              onClick={() => setToggle((prev) => !prev)}
+            />
+          </div>
+
+          {/* Uganda Coat of Arms — will sit inside padded container */}
+          <img
+            src={ugandaCoat}
+            alt='Uganda Coat of Arms'
+            className='w-[48px] h-[48px] object-contain'
+          />
         </div>
       </div>
 
-      {/* 🇺🇬 UGANDA COAT OF ARMS — Added here, far right */}
-      <img
-        src={ugandaCoat}
-        alt='Uganda Coat of Arms'
-        className='w-[48px] h-[48px] object-contain ml-4 sm:ml-6'
-      />
+      {/* Mobile Sidebar */}
+      <div
+        className={`${
+          toggle ? 'flex' : 'hidden'
+        } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10 sm:hidden`}
+      >
+        <ul className='list-none flex flex-col justify-end items-center flex-1'>
+          {navLinks.map((nav, i) => (
+            <li
+              key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                i === navLinks.length - 1 ? 'mb-0' : 'mb-4'
+              } text-white`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      {/* 🇺🇬 UGANDA FLAG STRIPE — BELOW NAVBAR (LIKE EBIZ) — DO NOT REMOVE */}
+      {/* 🇺🇬 UGANDA FLAG STRIPE — BELOW NAVBAR */}
       <div className="uganda-flag-stripe">
         <div className="flag-band black"></div>
         <div className="flag-band yellow"></div>
@@ -79,10 +93,9 @@ export default Navbar;
 
 
 
-
 // src/components/Navbar.jsx
 // import React, { useState } from 'react';
-// import { close, logo, menu } from '../assets';
+// import { close, logo, menu, ugandaCoat } from '../assets'; // ✅ Added import
 // import { navLinks } from '../constants';
 // import './Navbar.css';
 
@@ -108,7 +121,7 @@ export default Navbar;
 //         ))}
 //       </ul>
 
-//       {/* Mobile Menu Button */}
+//       {/* Mobile Menu Button + Uganda Coat of Arms (right side) */}
 //       <div className='sm:hidden flex flex-1 justify-end items-center'>
 //         <img
 //           src={toggle ? close : menu}
@@ -136,7 +149,14 @@ export default Navbar;
 //         </div>
 //       </div>
 
-//       {/* 🇺🇬 UGANDA FLAG STRIPE — BELOW NAVBAR (LIKE EBIZ) */}
+//       {/* 🇺🇬 UGANDA COAT OF ARMS — Added here, far right */}
+//       <img
+//         src={ugandaCoat}
+//         alt='Uganda Coat of Arms'
+//         className='w-[48px] h-[48px] object-contain ml-4 sm:ml-6'
+//       />
+
+//       {/* 🇺🇬 UGANDA FLAG STRIPE — BELOW NAVBAR (LIKE EBIZ) — DO NOT REMOVE */}
 //       <div className="uganda-flag-stripe">
 //         <div className="flag-band black"></div>
 //         <div className="flag-band yellow"></div>
@@ -147,3 +167,8 @@ export default Navbar;
 // };
 
 // export default Navbar;
+
+
+
+
+

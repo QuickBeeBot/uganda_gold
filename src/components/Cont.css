@@ -63,9 +63,27 @@
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.contact-card:hover {
-  border-color: rgba(200, 160, 70, 0.5);
+/* .contact-card:hover {
+  border-color: #72a2b1;
   transform: translateY(-4px);
+} */
+
+.contact-card:hover {
+  border-color: #72a2b1;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(114, 162, 177, 0.2); /* subtle glow */
+}
+
+.contact-card p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-card p a:hover {
+  color: #72a2b1;
+  text-decoration: underline;
 }
 
 /* Uganda Flag Stripe (Top) */
