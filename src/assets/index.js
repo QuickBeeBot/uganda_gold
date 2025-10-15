@@ -9,6 +9,7 @@ import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import m7 from "./hero_image.png";
 import send from "./Send.svg";
+import miningIcon from "./miningIcon.png";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
 import menu from "./menu.svg";
@@ -45,6 +46,7 @@ import gold_areas from "./gold_areas.png";
 import licenses from "./licenses.jpeg";
 
 export {
+  miningIcon,
   licenses,
   gold_areas,
   ugandaCoat,

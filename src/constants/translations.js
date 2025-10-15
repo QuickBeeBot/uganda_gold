@@ -40,6 +40,8 @@ export const translations = {
     feature2Content: "Collaborate with established local operators through equity partnerships and profit-sharing models.",
     feature3Title: "Equipment & Services",
     feature3Content: "Provide essential mining machinery, technology, and support services to active operations.",
+    feature4Title: "Mining Licenses & Refining",
+    feature4Content: "Invest in Uganda’s full gold value chain — from licensed mining to high-purity refining.",
 
     // English (en)
     region1Title: "Mining Concessions",
@@ -178,6 +180,8 @@ export const translations = {
     feature2Content: "تعاون مع مشغلين محليين راسخين من خلال شراكات أسهم ونماذج تقاسم الأرباح.",
     feature3Title: "المعدات والخدمات",
     feature3Content: "قدّم ماكينات التعدين الأساسية والتكنولوجيا وخدمات الدعم للعمليات النشطة.",
+    feature4Title: "تراخيص التعدين والتكرير",
+    feature4Content:  "استثمر في سلسلة القيمة الكاملة للذهب في أوغندا — من التعدين المرخّص إلى التكرير عالي النقاء.",
 
     // Arabic (ar)
     region1Title: "امتيازات التعدين",
@@ -302,6 +306,8 @@ export const translations = {
     feature2Content: "通过股权合作和利润分成模式，与成熟的本地运营商合作。",
     feature3Title: "设备与服务",
     feature3Content: "为活跃运营提供必要的采矿机械、技术和支持服务。",
+    feature4Title: "采矿许可证与精炼",
+    feature4Content: "投资乌干达完整的黄金价值链——从持牌采矿到高纯度精炼。",
 
     // Chinese (zh)
     region1Title: "采矿特许权",
@@ -424,6 +430,8 @@ export const translations = {
     feature2Content: "Collaborez avec des opérateurs locaux établis via des partenariats en capital et des modèles de partage des profits.",
     feature3Title: "Équipements & Services",
     feature3Content: "Fournissez des machines minières essentielles, de la technologie et des services de support aux opérations actives.",
+    feature4Title: "Permis Miniers & Raffinage",
+    feature4Content: "Investissez dans la chaîne de valeur complète de l'or en Ouganda — de l'exploitation minière autorisée au raffinage haute pureté.",
 
     // French (fr)
     region1Title: "Concessions Minières",
@@ -546,6 +554,8 @@ export const translations = {
     feature2Content: "Сотрудничайте с устоявшимися местными операторами через партнерства с долевым участием и модели распределения прибыли.",
     feature3Title: "Оборудование и Услуги",
     feature3Content: "Предоставляйте необходимую горнодобывающую технику, технологии и вспомогательные услуги для активных операций.",
+    feature4Title: "Горные Лицензии и Аффинаж",
+    feature4Content: "Инвестируйте в полную цепочку создания стоимости золота в Уганде — от лицензированной добычи до высокоочищенного аффинажа.",
 
     // Russian (ru)
     region1Title: "Горные Концессии",

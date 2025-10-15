@@ -1,7 +1,7 @@
 // src/components/Business.jsx
 import React, { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
-import { star, shield, send } from '../assets'; // ✅ Make sure these are imported
+import { star, shield, send, miningIcon } from '../assets'; // ✅ Make sure these are imported
 import styles, { layout } from '../style';
 import './Business.css';
 
@@ -52,6 +52,12 @@ const Business = () => {
       icon: send,
       title: t('feature3Title'),
       content: t('feature3Content'),
+    },
+    {
+      id: "feature-4",
+      icon: miningIcon,
+      title: t('feature4Title'),
+      content: t('feature4Content'),
     },
   ];
 
