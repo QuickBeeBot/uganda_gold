@@ -23,15 +23,17 @@ import {
 import styles from './style'
 // New Pages
 import MiningAct from './pages/MiningAct';
+import { LanguageProvider } from './context/LanguageContext';
 // import Prospectus from './pages/Prospectus'; 
 // import FAQ from './pages/FAQ'; 
 
 const App = () => {
   return (
+    <LanguageProvider>
     <div className='bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <LiveGoldPrice/>
+          {/* <LiveGoldPrice/> */}
           <Navbar/>
         </div>
       </div>
@@ -62,6 +64,7 @@ const App = () => {
         </div>
       </div>
     </div>
+  </LanguageProvider>
   )
 }
 

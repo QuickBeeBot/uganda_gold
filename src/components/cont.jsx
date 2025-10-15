@@ -1,30 +1,33 @@
 // src/components/Contact.jsx
-import React from 'react';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
 import './Cont.css';
 
 const Contacts = () => {
+  const { t } = useContext(LanguageContext);
+
+  // Split working hours into lines for proper line breaks
+  const workingHoursLines = t('contactHoursDetail').split('\n');
+
   return (
     <section id="contact" className="contact-section">
       <div className="container">
         {/* Title & Description */}
         <div className="contact-header">
-          <h2 className="section-heading"
-          style={{ color: '#FFD700' }} 
-          >Get In Touch</h2>
-          <p>
-            Reach out to the Uganda Gold Development Authority for licensing, investment inquiries, or partnership opportunities.
-          </p>
+          <h2 className="section-heading" style={{ color: '#FFD700' }}>
+            {t('contactTitle')}
+          </h2>
+          <p>{t('contactDescription')}</p>
         </div>
 
-        {/* Contact Info Cards Only */}
+        {/* Contact Info Cards */}
         <div className="contact-info">
           {/* Office Location */}
           <div className="contact-card">
             <div className="card-icon">
-              <i className="fas fa-map-marker-alt"style={{ color: '#72a2b1' }} ></i>
+              <i className="fas fa-map-marker-alt" style={{ color: '#72a2b1' }}></i>
             </div>
-            <h4
-          style={{ color: '#72a2b1' }} >Office Location</h4>
+            <h4 style={{ color: '#72a2b1' }}>{t('contactOffice')}</h4>
             <p>
               Ministry of Energy & Mineral Development<br />
               Amber House, Plot 2-12 Apollo Kaggwa Road<br />
@@ -35,10 +38,9 @@ const Contacts = () => {
           {/* Email */}
           <div className="contact-card">
             <div className="card-icon">
-              <i className="fas fa-envelope" style={{ color: '#72a2b1' }} ></i>
+              <i className="fas fa-envelope" style={{ color: '#72a2b1' }}></i>
             </div>
-            <h4
-          style={{ color: '#72a2b1' }} >Email Us</h4>
+            <h4 style={{ color: '#72a2b1' }}>{t('contactEmail')}</h4>
             <p>
               <a href="mailto:investments@golduganda.ug">investments@golduganda.ug</a>
               <br />
@@ -49,18 +51,23 @@ const Contacts = () => {
           {/* Phone */}
           <div className="contact-card">
             <div className="card-icon gold-bg-light">
-              <i className="fas fa-phone-alt" style={{ color: '#72a2b1' }} ></i>
+              <i className="fas fa-phone-alt" style={{ color: '#72a2b1' }}></i>
             </div>
-            <h4
-          style={{ color: '#72a2b1' }} >Call Us</h4>
+            <h4 style={{ color: '#72a2b1' }}>{t('contactPhone')}</h4>
             <p>
-              <strong>Office:</strong> <a href="tel:+256414234567">+256 414 234 567</a><br />
+              <strong>Office:</strong> <a href="tel:+256414234567">+256 414 234 567</a>
+              <br />
               <strong>24/7 Hotline:</strong> <a href="tel:+256700123456">+256 700 123 456</a>
             </p>
             <p className="working-hours">
-              <strong>Working Hours:</strong><br />
-              Monday - Friday: 8:00 AM - 6:00 PM EAT<br />
-              Weekends: By appointment only
+              <strong>{t('contactWorkingHours')}:</strong>
+              <br />
+              {workingHoursLines.map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < workingHoursLines.length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </p>
           </div>
         </div>
@@ -70,3 +77,85 @@ const Contacts = () => {
 };
 
 export default Contacts;
+
+
+
+
+
+
+
+// // src/components/Contact.jsx
+// import React from 'react';
+// import './Cont.css';
+
+// const Contacts = () => {
+//   return (
+//     <section id="contact" className="contact-section">
+//       <div className="container">
+//         {/* Title & Description */}
+//         <div className="contact-header">
+//           <h2 className="section-heading"
+//           style={{ color: '#FFD700' }} 
+//           >Get In Touch</h2>
+//           <p>
+//             Reach out to the Uganda Gold Development Authority for licensing, investment inquiries, or partnership opportunities.
+//           </p>
+//         </div>
+
+//         {/* Contact Info Cards Only */}
+//         <div className="contact-info">
+//           {/* Office Location */}
+//           <div className="contact-card">
+//             <div className="card-icon">
+//               <i className="fas fa-map-marker-alt"style={{ color: '#72a2b1' }} ></i>
+//             </div>
+//             <h4
+//           style={{ color: '#72a2b1' }} >Office Location</h4>
+//             <p>
+//               Ministry of Energy & Mineral Development<br />
+//               Amber House, Plot 2-12 Apollo Kaggwa Road<br />
+//               Kampala, Uganda
+//             </p>
+//           </div>
+
+//           {/* Email */}
+//           <div className="contact-card">
+//             <div className="card-icon">
+//               <i className="fas fa-envelope" style={{ color: '#72a2b1' }} ></i>
+//             </div>
+//             <h4
+//           style={{ color: '#72a2b1' }} >Email Us</h4>
+//             <p>
+//               <a href="mailto:investments@golduganda.ug">investments@golduganda.ug</a>
+//               <br />
+//               <a href="mailto:licensing@golduganda.ug">licensing@golduganda.ug</a>
+//             </p>
+//           </div>
+
+//           {/* Phone */}
+//           <div className="contact-card">
+//             <div className="card-icon gold-bg-light">
+//               <i className="fas fa-phone-alt" style={{ color: '#72a2b1' }} ></i>
+//             </div>
+//             <h4
+//           style={{ color: '#72a2b1' }} >Call Us</h4>
+//             <p>
+//               <strong>Office:</strong> <a href="tel:+256414234567">+256 414 234 567</a><br />
+//               <strong>24/7 Hotline:</strong> <a href="tel:+256700123456">+256 700 123 456</a>
+//             </p>
+//             <p className="working-hours">
+//               <strong>Working Hours:</strong><br />
+//               Monday - Friday: 8:00 AM - 6:00 PM EAT<br />
+//               Weekends: By appointment only
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Contacts;
+
+
+

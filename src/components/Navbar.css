@@ -15,3 +15,96 @@
   );
   z-index: 10;
 }
+
+/* src/components/Navbar.css */
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-toggle {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.language-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.language-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-menu li {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s ease;
+}
+
+.language-menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-menu li.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+/* RTL support */
+html[dir="rtl"] .language-menu {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .language-toggle {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+/* Arrow rotation */
+.language-toggle svg {
+  transition: transform 0.2s ease;
+}
+
+.language-toggle svg.rotate-180 {
+  transform: rotate(180deg);
+}
