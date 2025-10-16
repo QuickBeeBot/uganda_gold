@@ -24,6 +24,12 @@ import GeologicalSurvey from './pages/GeologicalSurvey';
 import TaxIncentiveGuide from './pages/TaxIncentiveGuide';
 import FAQSupport from './pages/FAQSupport';
 import DiscoveryScale from './pages/DiscoveryScale';
+import InvestmentPathways from './pages/InvestmentPathways';
+import TermsOfEngagement from './pages/TermsOfEngagement';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import AntiBriberyPolicy from './pages/AntiBriberyPolicy';
+import ESGFramework from './pages/ESGFramework';
+import RegulatoryDisclosures from './pages/RegulatoryDisclosures';
 
 // Styles
 import styles from './style';
@@ -72,6 +78,12 @@ const App = () => {
             <Route path="/tax-incentive-guide" element={<TaxIncentiveGuide />} />
             <Route path="/faq-support" element={<FAQSupport />} />
             <Route path="/discovery-scale" element={<DiscoveryScale />} />
+            <Route path="/investment-pathways" element={<InvestmentPathways />} />
+            <Route path="/terms-of-engagement" element={<TermsOfEngagement />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/anti-bribery-policy" element={<AntiBriberyPolicy />} />
+            <Route path="/esg-framework" element={<ESGFramework />} />
+            <Route path="/regulatory-disclosures" element={<RegulatoryDisclosures />} />
 
             {/* Add more pages here as needed */}
             {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
