@@ -1,71 +1,87 @@
-import React from 'react'
-import { 
-  Billing, 
-  Business, 
+// src/App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
+
+// Components (for homepage)
+import {
+  Business,
   Areas,
-  CardDeal, 
-  Clients, 
-  MiningAreasSection,
-  CTA, 
-  Footer, 
-  Hero, 
-  Navbar, 
-  Stats,  
-  Regions, 
-  Equipment,
+  Footer,
+  Hero,
+  Navbar,
+  Stats,
   InvestmentForm,
   Contacts,
-  Contact,
   Discovery,
   LiveGoldPrice,
-  Testimonials 
-} from './components'
-import styles from './style'
-// New Pages
+} from './components';
+
+// Pages (standalone routes)
 import MiningAct from './pages/MiningAct';
-import { LanguageProvider } from './context/LanguageContext';
-// import Prospectus from './pages/Prospectus'; 
-// import FAQ from './pages/FAQ'; 
+import InvestmentProspectus from './pages/InvestmentProspectus';
+import GeologicalSurvey from './pages/GeologicalSurvey';
+import TaxIncentiveGuide from './pages/TaxIncentiveGuide';
+import FAQSupport from './pages/FAQSupport';
+import DiscoveryScale from './pages/DiscoveryScale';
+
+// Styles
+import styles from './style';
+
+// Homepage Layout Component
+const HomePage = () => (
+  <>
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <LiveGoldPrice />
+        <Navbar />
+      </div>
+    </div>
+    <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Hero />
+      </div>
+    </div>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Stats />
+        <Areas />
+        <Business />
+        <Discovery />
+        <InvestmentForm />
+        <Contacts />
+        <Footer />
+      </div>
+    </div>
+  </>
+);
 
 const App = () => {
   return (
     <LanguageProvider>
-    <div className='bg-primary w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          {/* <LiveGoldPrice/> */}
-          <Navbar/>
-        </div>
-      </div>
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero/>      
-        </div>
-      </div>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Stats/>
-          {/* <LiveGoldPrice/> */}
-          <Areas/>
-          {/* <MiningAreasSection/> */}
-          <Business/>
-          <Discovery/>
-          {/* <Billing/> */}
-          {/* <CardDeal/> */}
-          {/* <Equipment/> */}
-          {/* <Regions/> */}
-          <InvestmentForm/>
-          <Contacts/>
-          {/* <Contact/> */}
-          {/* <Testimonials/> */}
-          {/* <Clients/> */}
-          {/* <CTA/> */}
-          <Footer/>     
-        </div>
-      </div>
-    </div>
-  </LanguageProvider>
-  )
-}
+      <Router>
+        <div className='bg-primary w-full overflow-hidden'>
+          <Routes>
+            {/* Main scrollable homepage */}
+            <Route path="/" element={<HomePage />} />
 
-export default App
+            {/* Standalone pages */}
+            <Route path="/mining-act" element={<MiningAct />} />
+            <Route path="/investment-prospectus" element={<InvestmentProspectus />} />
+            <Route path="/geological-survey" element={<GeologicalSurvey />} />
+            <Route path="/tax-incentive-guide" element={<TaxIncentiveGuide />} />
+            <Route path="/faq-support" element={<FAQSupport />} />
+            <Route path="/discovery-scale" element={<DiscoveryScale />} />
+
+            {/* Add more pages here as needed */}
+            {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
+          </Routes>
+        </div>
+      </Router>
+    </LanguageProvider>
+  );
+};
+
+export default App;
+
+
