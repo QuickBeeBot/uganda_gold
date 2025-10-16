@@ -397,6 +397,8 @@ regulatoryDownloadBtn: "Download Full Disclosures (4.3 MB)",
 regulatoryFooterNote: "Last updated: October 2025 | Filed with Uganda Securities Exchange & Ministry of Finance",
 backToHome: "Back to Home",
 
+liveGoldPriceLabel: "LIVE GOLD PRICE",
+
 
   },
 
@@ -760,6 +762,8 @@ regulatoryRisk3: "الاستقرار الجيوسياسي في شرق إفريق
 regulatoryRisk4: "أحداث القوة القاهرة (مثل الأوبئة والكوارث الطبيعية)",
 regulatoryDownloadBtn: "تنزيل الإفصاحات الكاملة (4.3 ميجابايت)",
 regulatoryFooterNote: "آخر تحديث: أكتوبر 2025 | مُقدَّم إلى بورصة أوغندا للأوراق المالية ووزارة المالية",
+
+liveGoldPriceLabel: "سعر الذهب الحي",
     
 
   },
@@ -1119,6 +1123,8 @@ regulatoryRisk3: "东非地缘政治稳定性",
 regulatoryRisk4: "不可抗力事件（如疫情、自然灾害）",
 regulatoryDownloadBtn: "下载完整披露文件（4.3 MB）",
 regulatoryFooterNote: "最后更新：2025年10月 | 已提交乌干达证券交易所及财政部",
+
+liveGoldPriceLabel: "实时金价",
     
   },
 
@@ -1482,6 +1488,7 @@ regulatoryRisk4: "Événements de force majeure (ex. pandémies, catastrophes na
 regulatoryDownloadBtn: "Télécharger les Divulgations Complètes (4,3 Mo)",
 regulatoryFooterNote: "Dernière mise à jour : octobre 2025 | Déposé auprès de la Bourse des Valeurs de l'Ouganda et du Ministère des Finances",
 
+liveGoldPriceLabel: "COURS EN DIRECT DE L'OR",
 
 
   },
@@ -1843,6 +1850,8 @@ regulatoryRisk3: "Геополитическая стабильность в В�
 regulatoryRisk4: "Обстоятельства непреодолимой силы (например, пандемии, стихийные бедствия)",
 regulatoryDownloadBtn: "Скачать полные раскрытия (4,3 МБ)",
 regulatoryFooterNote: "Последнее обновление: октябрь 2025 г. | Подано в Угандийскую фондовую биржу и Министерство финансов",
+
+liveGoldPriceLabel: "АКТУАЛЬНАЯ ЦЕНА НА ЗОЛОТО",
 
 
   },
